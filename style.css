@@ -4,6 +4,8 @@
 
 body {
     font-family: 'Work Sans', sans-serif;
+    background-color: black;
+    color: white;
 }
 
 nav {
@@ -11,8 +13,8 @@ nav {
     justify-content: center;
     align-items: center;
     padding: 20px;
-    background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: black;
+    box-shadow: rgba(230, 225, 225, 0.596) 0px 3px 8px;
     position:fixed;
     top:0;
     width:100%;
@@ -22,24 +24,24 @@ ul {
     padding: 0;
 }
 
-.nav {
+.navegador {
     display: flex;
     list-style: none;
 }
 
 .lista-nav {
     font-size: 18px;
-    padding: 15px 30px;
+    margin: 10px;
 }
 
 a {
     text-decoration: none;
-    color: rgb(29, 28, 28);
+    color: white;
 }
 
 .seccion-presentacion{
     display: flex;
-    padding: 50px;
+    padding:200px 50px;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
@@ -52,7 +54,7 @@ a {
     line-height: 50px;
 }
 
-.photo {
+.foto {
     padding: 50px;
 }
 
@@ -66,20 +68,21 @@ img {
     font-size: 30px;
 }
 
-.name {
-    color: #ad5bf0;
+.nombre {
+    color: #d125ba;
     font-family: 'PT Serif', serif;
     font-size: 60px;
 }
 
-.development {
-    color: rgb(53, 53, 53);
+.descripcion {
+    color: rgb(145, 144, 144);
     margin-top: 20px;
+    margin-bottom: 20px;
     font-size: 20px;
 } 
 
-.bottom {
-    background-color: #ad5bf0;
+.boton {
+    background-color: #d125ba;
     color: white;
     padding: 0px 15px;
     border-radius: 100px;
@@ -89,27 +92,28 @@ img {
 }
 
 .subtitulo {
+    color: white;
     font-family: 'Karla', sans-serif;
     font-size: 40px;
     margin-bottom: 40px;
 }
 
 .section-conocimientos {
+    background-color: #620670;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     padding: 100px 200px;
-    background-color: rgb(223, 222, 222);
 }
 
-.center {
+.parrafo {
     margin: 10px 0px 60px 0px;
     width: 50%;
 }
 
-.card-conocimiento {
+.contenedor-conocimiento {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -117,7 +121,7 @@ img {
     margin-top: 40px;
 }
 
-.card {
+.card-conocimiento {
     background-color: white;
     padding: 60px 40px;
     width: 180px;
@@ -157,14 +161,15 @@ img {
     font-size: 80px;
 }
 
-.letra-negrita {
+.letra-card {
+    color: black;
     margin-top: 10px;
     font-size: 20px;
     font-weight: 1000;
 }
 
 .seccion-frase {
-    background-color: #ad5bf0;
+    background-color: #d125ba;
     padding: 100px;
 }
 
@@ -190,7 +195,7 @@ img {
     padding: 100px 0px;
 }
 
-.card-proyectos {
+.contenedor-proyectos {
     flex-wrap: wrap;
     display: flex;
     align-items: center;
@@ -198,32 +203,34 @@ img {
     padding: 0px 125px;
 }
 
-.card-proyects {
+.card-proyectos {
+    background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     width: 300px;
     padding: 25px 20px;
-    border: 1px solid rgb(196, 194, 194);
+    border: 1px solid rgb(179, 175, 175);
     border-radius: 8px;
     margin: 10px;
 }
 
-.img-proyect {
+.img-proyecto {
     height: 180px;
 }
 
 .seccion-contacto {
+    background-color: #620670;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    background-color: rgb(223, 219, 219);
-    padding: 120px 115px;
+    padding: 120px;
 }
 
-.card-contacto {
+.contenedor-contacto {
     background-color: white;
+    color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -248,24 +255,28 @@ img {
 }
 
 .fa-github-alt {
-    color: #ad5bf0;
+    color: #d125ba;
     font-size: 20px;
 }
 
 .fa-instagram {
-    color: #ad5bf0;
+    color: #d125ba;
     font-size: 20px;
 }
 
 
 .fa-linkedin {
-    color: #ad5bf0;
+    color: #d125ba;
     font-size: 20px;
 }
 
 .fa-envelope {
-    color: #ad5bf0;
+    color: #d125ba;
     font-size: 20px;
+}
+
+.letra-black {
+    color: black;
 }
 
 .escribime {
@@ -278,7 +289,7 @@ img {
 }
 
 footer {
-    background-color: #ad5bf0;
+    background-color: #d125ba;
     color: white;
     display: flex;
     flex-direction: column;
@@ -290,7 +301,6 @@ footer {
 
 .lista-footer {
     margin: 10px;
-    color: white;
 }
 
 .redondo {
