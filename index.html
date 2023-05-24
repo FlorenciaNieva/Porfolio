@@ -16,19 +16,19 @@
     <!-- Links de navegación -->
 
     <header>
-        <nav>
-            <ul class="navegador">
-                <li class="lista-nav">
-                    <a href="#presentacion">HOLA</a>
+        <nav class="navegador">
+            <ul class="lista">
+                <li>
+                    <a href="#presentacion" class="item-nav">HOLA</a>
                 </li>
-                <li class="lista-nav">
-                    <a href="#conocimientos">CONOCIMIENTOS</a>
+                <li>
+                    <a href="#conocimientos" class="item-nav">CONOCIMIENTOS</a>
                 </li>
-                <li class="lista-nav">
-                    <a href="#proyectos">PROYECTOS</a>
+                <li>
+                    <a href="#proyectos"  class="item-nav">PROYECTOS</a>
                 </li>
-                <li class="lista-nav">
-                    <a href="#contacto" class="boton">CONTACTO</a>
+                <li>
+                    <a href="#contacto"  class="item-nav" id="boton-contacto">CONTACTO</a>
                 </li>
             </ul>
         </nav>
@@ -50,17 +50,17 @@
                 <p class="descripcion">
                     Programadora Frontend
                 </p>
-                <div class="boton-presentacion">
-                    <a href="#proyectos" class="boton">
+                <div>
+                    <a href="#proyectos" id="boton-presentacion">
                         LO QUE HAGO
                     </a>
                 </div>
             </div>
 
             <div class="foto">
-                <figure id="foto-presentacion">
+                <figure id="img-portada">
                     <!-- Buscar una foto mia para poner -->
-                    <img class="perfil" src="https://frontend-proyecto-portfolio.adaitw.org/images/software-engineer.svg" alt="Imagen de presentación">
+                    <img src="img/software-engineer.svg" alt="Imagen de portada">
                 </figure>
             </div>
         </section>
@@ -68,8 +68,8 @@
         <!-- Sección de habilidades -->
 
         <a name="conocimientos"></a>
-        <section class="section-conocimientos">
-            <h2 class="subtitulo">
+        <section class="seccion-conocimientos">
+            <h2>
                 Mis conocimientos
             </h2>
             <p class="parrafo">
@@ -81,32 +81,32 @@
             <div class="contenedor-conocimiento">
                 <div class="card-conocimiento">
                     <i class="fa-brands fa-html5"></i>
-                    <p class="letra-card">HTML 5</p>
+                    <p class="letra-card-conocimientos">HTML 5</p>
                 </div>
 
                 <div class="card-conocimiento">
                     <i class="fa-brands fa-css3-alt"></i>
-                    <p class="letra-card">CSS 3</p>
+                    <p class="letra-card-conocimientos">CSS 3</p>
                 </div>
 
                 <div class="card-conocimiento">
                     <i class="fa-brands fa-sass"></i>
-                    <p class="letra-card">SASS</p>
+                    <p class="letra-card-conocimientos">SASS</p>
                 </div>
 
                 <div class="card-conocimiento">
                     <i class="fa-brands fa-js"></i>
-                    <p class="letra-card">JavaScript</p>
+                    <p class="letra-card-conocimientos">JavaScript</p>
                 </div>
 
                 <div class="card-conocimiento">
                     <i class="fa-brands fa-react"></i>
-                    <p class="letra-card">React</p>
+                    <p class="letra-card-conocimientos">React</p>
                 </div>
 
                 <div class="card-conocimiento">
                     <i class="fa-brands fa-git-alt"></i>
-                    <p class="letra-card">GIT</p>
+                    <p class="letra-card-conocimientos">GIT</p>
                 </div>
             </div>
         </section>
@@ -130,7 +130,7 @@
 
         <a name="proyectos"></a>
         <section class="seccion-proyectos">
-            <h2 class="subtitulo">
+            <h2>
                 Mis proyectos
             </h2>
             <p class="parrafo">
@@ -141,79 +141,78 @@
 
             <div class="contenedor-proyectos">
 
-                <a href="">
+                <a href="" class="margin">
                     <div class="card-proyectos">
                         <figure class="img-proyecto">
-                            <img src="https://frontend-proyecto-portfolio.adaitw.org/images/Screen%20Shot%202020-07-12%20at%2014.31.06.png" alt="imagen de presentación del proyecto">
+                            <img src="img/portfolio.png" alt="imagen de presentación del proyecto">
                         </figure>
-                        <p class="letra-card">
-                                Portfolio
-                            </p>
+                        <p class="letra-card-proyecto">
+                            Portfolio
+                        </p>
                     </div>
-                    
                 </a>
                 
-                <a href="">
+                <a href="" class="margin">
                     <div class="card-proyectos">
                         <figure class="img-proyecto">
-                            <img src="https://frontend-proyecto-portfolio.adaitw.org/images/undraw_mobile_user_7oqo.png" alt="imagen de presentación del proyecto">
+                            <img src="img/generador-de-memes.png" alt="imagen de presentación del proyecto">
                         </figure>
-                        <p class="letra-card">
+                        <p class="letra-card-proyecto">
                             Generador de memes
                         </p>
                     </div>
                 </a>
                 
-                <a href="">
+                <a href="" class="margin">
                     <div class="card-proyectos">
                         <figure class="img-proyecto">
-                            <img src="https://frontend-proyecto-portfolio.adaitw.org/images/undraw_old_day_6x25.png" alt="imagen de presentación del proyecto">
+                            <img src="img/match3.png" alt="imagen de presentación del proyecto">
                         </figure>
-                        <p class="letra-card">
+                        <p class="letra-card-proyecto">
                             Match 3
                         </p>
                     </div> 
                 </a>
 
-                <a href="">
+                <a href="" class="margin">
                     <div class="card-proyectos">
                         <figure class="img-proyecto">
-                            <img src="https://frontend-proyecto-portfolio.adaitw.org/images/undraw_wallet_aym5.png" alt="imagen de presentación del proyecto">
+                            <img src="img/controlador-de-gastos.png" alt="imagen de presentación del proyecto">
                         </figure>
-                        <p class="letra-card">
+                        <p class="letra-card-proyecto">
                             Controlador de gastos
                         </p>
                     </div>
                 </a>
                 
-                <a href="">
+                <a href="" class="margin">
                     <div class="card-proyectos">
                         <figure class="img-proyecto">
-                            <img src="https://frontend-proyecto-portfolio.adaitw.org/images/undraw_calendar_dutt.png" alt="imagen de presentación del proyecto">
+                            <img src="img/administrador-de-reuniones.png" alt="imagen de presentación del proyecto">
                         </figure>
-                        <p class="letra-card">
+                        <p class="letra-card-proyecto">
                             Administrador de reuniones
                         </p>
                     </div>
                 </a>
 
-                <a href="">
+                <a href="" class="margin">
                     <div class="card-proyectos">
                         <figure class="img-proyecto">
-                            <img src="https://frontend-proyecto-portfolio.adaitw.org/images/undraw_to_do_list_a49b.png" alt="imagen de presentación del proyecto">
+                            <img src="img/todo-app.png" alt="imagen de presentación del proyecto">
                         </figure>
-                        <p class="letra-card">
+                        <p class="letra-card-proyecto">
                             Todo app
                         </p>
                     </div>
                 </a>
                 
-                <a href="">
+                <a href="" class="margin">
                     <div class="card-proyectos">
                         <figure class="img-card-pelicula">
-                            <img src="https://frontend-proyecto-portfolio.adaitw.org/images/undraw_movie_night_fldd.png" alt="imagen de presentación del proyecto">
+                            <img src="img/buscador-de-peliculas.png" alt="imagen de presentación del proyecto">
                         </figure>
-                        <p class="letra-card">
+                        <p class="letra-card-proyecto">
                             Buscador de peliculas
                         </p>
                     </div>
@@ -228,41 +227,41 @@
         <section class="seccion-contacto">
             <div class="contenedor-contacto">
                 <div class="contactame">
-                    <h2 class="subtitulo letra-black">
+                    <h2>
                         Contactame
                     </h2>
                     <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus eius facere, voluptates at, modi veritatis voluptas labore culpa nostrum dignissimos debitis eos error? Explicabo, repellat.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nihil temporibus maiores molestias ipsa culpa nostrum molestiae est quasi ab.
                     </p>
 
                     <!-- Links de contacto -->
 
-                    <ul class="list-icons">
-                        <li>
-                            <a href="https://github.com/FlorenciaNieva" class="letra-black">
-                                <i class="fa-brands fa-github-alt"></i> FlorenicaNieva
+                    <ul class="lista-iconos">
+                        <li >
+                            <a href="https://github.com/FlorenciaNieva" class="icono-contacto">
+                                <i class="fa-brands fa-github-alt redondo-icono"></i> FlorenicaNieva
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.instagram.com/flor_nievaa/" class="letra-black">
-                                <i class="fa-brands fa-instagram"></i> @flor_nievaa
+                            <a href="https://www.instagram.com/flor_nievaa/" class="letra-black icono-contacto">
+                                <i class="fa-brands fa-instagram redondo-icono"></i> @flor_nievaa
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.linkedin.com/in/florencia-nievaa/" class="letra-black">
-                                <i class="fa-brands fa-linkedin"></i> Florenica Nieva
+                            <a href="https://www.linkedin.com/in/florencia-nievaa/" class="letra-black icono-contacto">
+                                <i class="fa-brands fa-linkedin redondo-icono"></i> Florenica Nieva
                             </a>
                         </li>
                         <li>
-                            <a href="mailto:florencianieva930@gmail.com" class="letra-black">
-                                <i class="fa-regular fa-envelope"></i> florencianieva930@gmail.com
+                            <a href="mailto:florencianieva930@gmail.com" class="letra-black icono-contacto">
+                                <i class="fa-regular fa-envelope redondo-icono"></i> florencianieva930@gmail.com
                             </a>
                         </li>
                     </ul>
                 </div>
             
                 <div class="escribime">
-                    <h2 class="subtitulo letra-black">
+                    <h2>
                         Escribime
                     </h2>
                     <!-- Formulario de contacto-->
@@ -301,47 +300,47 @@
     </main>
 
     <!-- Links de navegación y contacto -->
-    <footer>
+    <footer class="pie-de-pagina">
 
-        <ul class="navegador">
+        <ul class="lista">
             <li>
-                <a href="#presentacion" class="lista-footer">HOLA</a> 
+                <a href="#presentacion" class="item-footer">HOLA</a> 
             </li>
             <li >
-                <a href="#conocimientos" class="lista-footer">CONOCIMIENTOS</a> 
+                <a href="#conocimientos" class="item-footer">CONOCIMIENTOS</a> 
             </li>
             <li>
-                <a href="#proyectos" class="lista-footer">PROYECTOS</a> 
+                <a href="#proyectos" class="item-footer">PROYECTOS</a> 
             </li>
             <li>
-                <a href="#contacto" class="lista-footer">CONTACTO</a> 
+                <a href="#contacto" class="item-footer">CONTACTO</a> 
             </li>
         </ul>
 
-        <ul class="navegador">
+        <ul class="lista">
             <li>
-                <a href="https://github.com/FlorenciaNieva" class="redondo">
-                    <i class="fa-brands fa-github-alt"></i>
+                <a href="https://github.com/FlorenciaNieva" class="redondo-footer">
+                    <i class="fa-brands fa-github-alt icono-footer"></i>
                 </a>
             </li>
             <li>
-                <a href="https://www.instagram.com/flor_nievaa/" class="redondo">
-                    <i class="fa-brands fa-instagram"></i>
+                <a href="https://www.instagram.com/flor_nievaa/" class="redondo-footer">
+                    <i class="fa-brands fa-instagram icono-footer"></i>
                 </a>
             </li>
             <li>
-                <a href="https://www.linkedin.com/in/florencia-nievaa/" class="redondo">
-                    <i class="fa-brands fa-linkedin"></i>
+                <a href="https://www.linkedin.com/in/florencia-nievaa/" class="redondo-footer">
+                    <i class="fa-brands fa-linkedin icono-footer"></i>
                 </a>
             </li>
             <li>
-                <a href="mailto:florencianieva930@gmail.com" class="redondo">
-                    <i class="fa-regular fa-envelope"></i>
+                <a href="mailto:florencianieva930@gmail.com" class="redondo-footer">
+                    <i class="fa-regular fa-envelope icono-footer"></i>
                 </a>
             </li>
         </ul>
 
-        <p>Hecho con ❤️ por Flor Nieva</p>
+        <p>Hecho con 💜 por Flor Nieva</p>
     </footer>
 </body>
 </html>

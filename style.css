@@ -17,27 +17,8 @@ header {
     top:0;
 }
 
-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 25px;
-    background-color: black;
-    box-shadow: rgba(230, 225, 225, 0.596) 0px 3px 8px;
-}
-
 ul {
     padding: 0;
-}
-
-.navegador {
-    display: flex;
-    list-style: none;
-}
-
-.lista-nav {
-    font-size: 18rem;
-    margin: 10px;
 }
 
 a {
@@ -45,11 +26,77 @@ a {
     color: white;
 }
 
-.boton{
-    background-color: #d125ba;
+a:focus{
+    outline: none;
+}
+
+p {
+    font-size: 18rem;
+}
+
+.navegador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px;
+    background-color: black;
+    box-shadow: rgba(230, 225, 225, 0.596) 0px 3px 8px;
+}
+
+.lista {
+    display: flex;
+    list-style: none;
+}
+
+.item-nav {
+    font-size: 18rem;
+    margin: 10px;
+    border-radius: 25px;
+    padding: 15px;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+/* hover lista nav */
+.item-nav:hover{
+    font-weight: 700;
+    color: #AA14F0;
+}
+
+/* active lista nav */
+.item-nav:active:not(:nth-child(4)){
+    border: 1px solid #AA14F0;
+    box-shadow: rgba(220, 89, 246, 0.775) 0px 2px 4px 0px, rgba(220, 89, 246, 0.775) 0px 2px 20px 0px;
+}
+
+/* focus lista nav */
+.item-nav:focus:not(:nth-child(4)){
+    border: 1px solid #AA14F0;
+    box-shadow: rgba(220, 89, 246, 0.775) 0px 2px 4px 0px, rgba(220, 89, 246, 0.775) 0px 2px 20px 0px;
+}
+
+#boton-contacto{
+    background-color: #AA14F0;
     color: white;
     padding: 10px 20px;
     border-radius: 50px;
+    transition-duration: 0.2s;
+}
+
+/* hover de boton contacto */
+#boton-contacto:hover {
+    font-weight: 300;
+    background-color: #b154dc;
+}
+
+/* active de boton de conocimientos */
+#boton-contacto:active{
+    background-color: #AA14F0;
+    box-shadow: rgba(144, 48, 163, 0.775) 0px 2px 4px 0px, rgba(144, 48, 163, 0.775) 0px 2px 20px 0px;
+}
+
+/* focus del boton conocimiento */
+#boton-contacto:focus{
+    box-shadow: rgba(144, 48, 163, 0.775) 0px 2px 4px 0px, rgba(144, 48, 163, 0.775) 0px 2px 20px 0px;
     
 }
 
@@ -67,22 +114,13 @@ a {
     line-height: 50px;
 }
 
-#foto-presentacion {
-    width: 500px;
-}
-
-img {
-    width: 100%;
-    display: block;
-}
-
 .intro {
     font-family: 'PT Serif', serif;
     font-size: 30rem;
 }
 
 .nombre {
-    color: #d125ba;
+    color: #AA14F0;
     font-family: 'PT Serif', serif;
     font-size: 60rem;
 }
@@ -94,18 +132,44 @@ img {
     font-size: 20rem;
 } 
 
-.subtitulo {
+#boton-presentacion{
+    background-color: #AA14F0;
     color: white;
-    font-family: 'Karla', sans-serif;
-    font-size: 50rem;
-    margin-bottom: 40px;
-}
-.boton-presentacion {
     font-size: 20rem;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition-duration: 0.2s;
 }
 
-.section-conocimientos {
-    background-color: #620670;
+/* hover de boton lo que hago */
+#boton-presentacion:hover {
+    background-color: #b154dc;
+}
+
+/* active de boton de lo que hago */
+#boton-presentacion:active{
+    background-color: #AA14F0;
+    box-shadow: rgba(144, 48, 163, 0.775) 0px 2px 4px 0px, rgba(144, 48, 163, 0.775) 0px 2px 20px 0px;
+}
+
+/* focus boton lo que hago */
+#boton-presentacion:focus{
+    box-shadow: rgba(144, 48, 163, 0.775) 0px 2px 4px 0px, rgba(144, 48, 163, 0.775) 0px 2px 20px 0px;
+    
+}
+
+#img-portada {
+    width: 500px;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.seccion-conocimientos {
+    background-color: #AA14F0;
+    color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -114,8 +178,11 @@ img {
     padding: 150px 200px;
 }
 
-p {
-    font-size: 18rem;
+.seccion-conocimientos h2{
+    color: black;
+    font-family: 'Karla', sans-serif;
+    font-size: 50rem;
+    margin-bottom: 40px;
 }
 
 .parrafo {
@@ -132,13 +199,30 @@ p {
 }
 
 .card-conocimiento {
-    background-color: white;
+    background-color: rgb(236, 211, 236);
     padding: 60px 40px;
     width: 180px;
     border: 1px solid rgb(185, 183, 183);
     border-radius: 10px;
     display: block;
     margin: 10px;
+    transition: 0.1s;
+}
+
+.card-conocimiento p {
+    color: black;
+    margin-top: 10rem;
+    font-size: 20rem;
+    font-weight: 1000;
+}
+
+/* Hover de card conocimientos */
+.card-conocimiento:hover {
+    border: 1px solid #000;
+}
+
+.card-conocimiento:hover p {
+    color: #AA14F0;
 }
 
 .fa-html5 {
@@ -171,15 +255,9 @@ p {
     font-size: 80rem;
 }
 
-.letra-card {
-    color: black;
-    margin-top: 10rem;
-    font-size: 20rem;
-    font-weight: 1000;
-}
-
 .seccion-frase {
-    background-color: #d125ba;
+    background-color:#8204b4;
+    color: rgb(236, 211, 236);
     padding: 150px 250px;
 }
 
@@ -192,6 +270,7 @@ p {
 }
 
 .fa-quote-right {
+    color: rgb(236, 211, 236);
     font-size: 100rem;
     align-self: center;
 }
@@ -201,8 +280,9 @@ p {
     margin: 20px;
 }
 
-
 .seccion-proyectos {
+    background-color: #5b0e9a;
+    color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -211,10 +291,21 @@ p {
     padding: 100px 0px;
 }
 
+.seccion-proyectos h2{
+    color: black;
+    font-family: 'Karla', sans-serif;
+    font-size: 50rem;
+    margin-bottom: 40px;
+}
+
 .contenedor-proyectos {
     flex-wrap: wrap;
     display: flex;
     padding: 0px 125px;
+}
+
+.margin{
+    margin: 10px;
 }
 
 .card-proyectos {
@@ -224,9 +315,9 @@ p {
     justify-content: space-between;
     width: 300px;
     padding: 25px 20px;
-    border: 1px solid rgb(179, 175, 175);
+    border: 1px solid #5b0e9a;
     border-radius: 8px;
-    margin: 10px;
+    transition: 0.1s;
 }
 
 .img-proyecto {
@@ -238,8 +329,34 @@ p {
     height: 200px;
 }
 
+.letra-card-proyecto{
+    color: #3F0071;
+    margin-top: 10rem;
+    font-size: 20rem;
+    font-weight: 1000;
+}
+
+/* Hover de card proyect */
+.card-proyectos:hover {
+    border: 1px solid #ffffff;
+}
+.card-proyectos:hover p {
+    color: #AA14F0;
+}
+
+/* Active de card proyect */
+.card-proyectos:active{
+    box-shadow: rgba(255, 255, 255, 0.775) 0px 2px 4px 0px, rgba(255, 255, 255, 0.775) 0px 2px 20px 0px;
+}
+
+/* focus de las card de proyecto */
+a:focus .card-proyectos{
+    border: 1px solid white;
+    box-shadow: rgba(255, 255, 255, 0.744) 0px 2px 4px 0px, rgba(255, 255, 255, 0.775) 0px 2px 20px 0px;
+}
+
 .seccion-contacto {
-    background-color: #620670;
+    background-color: #3F0071;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -247,7 +364,7 @@ p {
 }
 
 .contenedor-contacto {
-    background-color: white;
+    background-color: rgb(252, 234, 252);
     color: black;
     display: flex;
     justify-content: center;
@@ -258,6 +375,13 @@ p {
     padding: 0px 70px;
 }
 
+.contenedor-contacto h2{
+    color: black;
+    font-family: 'Karla', sans-serif;
+    font-size: 50rem;
+    margin-bottom: 40px;
+}
+
 .contactame {
     display: flex;
     flex-direction: column;
@@ -265,36 +389,71 @@ p {
     padding-right: 60px;
 }
 
-.list-icons {
-    margin-top: 20px;
+.lista-iconos {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 15px;
     font-size: 18rem;
     list-style: none;
     line-height: 50px;
 }
 
+.icono-contacto{
+    border: 1px solid rgba(255, 255, 255, 0);
+    padding: 12px;
+    border-radius: 30px;
+    margin: 5px;
+    transition: 0.1s;
+}
+
+.redondo-icono{
+    background-color: rgba(255, 255, 255, 0);
+    padding: 8px;
+    border-radius: 50%;
+}
+
 .fa-github-alt {
-    color: #d125ba;
+    color: #AA14F0;
     font-size: 20rem;
 }
 
 .fa-instagram {
-    color: #d125ba;
+    color: #AA14F0;
     font-size: 20rem;
 }
 
-
 .fa-linkedin {
-    color: #d125ba;
+    color: #AA14F0;
     font-size: 20rem;
 }
 
 .fa-envelope {
-    color: #d125ba;
+    color: #AA14F0;
     font-size: 20rem;
 }
 
-.letra-black {
+.lista-iconos a{
     color: black;
+}
+
+/* hover de los iconos de contactame */
+.lista-iconos a:hover .redondo-icono{ 
+    background-color: #AA14F0;
+    color: white;
+}
+.lista-iconos a:hover{
+    color: #AA14F0;
+}
+
+/* active de los iconos de contactame */
+.icono-contacto:active{
+    box-shadow: rgba(220, 89, 246, 0.775) 0px 2px 4px 0px, rgba(220, 89, 246, 0.775) 0px 2px 20px 0px;
+}
+
+/* focus de los iconos de contactame */
+.icono-contacto:focus{
+    box-shadow: rgba(220, 89, 246, 0.775) 0px 2px 4px 0px, rgba(220, 89, 246, 0.775) 0px 2px 20px 0px;
 }
 
 .escribime {
@@ -306,18 +465,15 @@ p {
     padding-top: 100px;
 }
 
-
 /* formulario */
 
 #contacto {
+    width: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-form {
-    width: 500px;
-}
 label {
     font-size: 18rem;
     font-weight: 1000;
@@ -328,6 +484,8 @@ input {
     flex-direction: column;
     margin-top: 15px;
     margin-bottom: 15px;
+    outline: none;
+    transition: 0.2s;
 }
 
 .nombre-apellido{
@@ -342,6 +500,7 @@ input {
     background-color: #f6f7fb;
     border: none;
 }
+
 #surname {
     border-radius: 20px;
     padding: 15px;
@@ -350,6 +509,7 @@ input {
     background-color: #f6f7fb;
     border: none;
 }
+
 #email {
     border-radius: 20px;
     padding: 15px;
@@ -357,6 +517,7 @@ input {
     background-color: #f6f7fb;
     border: none;
 }
+
 #mensaje {
     border-radius: 20px;
     padding: 15px;
@@ -366,24 +527,49 @@ input {
     padding: 10px;
     background-color: #f6f7fb;
     border: none;
+    outline: none;
 }
+
+/* focus de los inputs */
+input:focus{
+    box-shadow: rgba(220, 89, 246, 0.775) 0px 2px 4px 0px, rgba(220, 89, 246, 0.775) 0px 2px 20px 0px;
+}
+
+/* focus de textarea */
+#mensaje:focus{
+    box-shadow: rgba(220, 89, 246, 0.775) 0px 2px 4px 0px, rgba(220, 89, 246, 0.775) 0px 2px 20px 0px;
+}
+
 #boton-enviar {
     display: flex;
     justify-content: center;
     text-align: center;
     border: none;
-    background-color: #d125ba;
+    background-color:#AA14F0;
     color: white;
     padding: 15px 40px;
     border-radius: 25px;
     font-size: 15rem;
+    transition-duration: 0.2s;
 }
 
+/* hover del boton enviar */
+#boton-enviar:hover{
+    background-color: #b154dc;
+}
 
-/* pie de página */
-footer {
-    background-color: #d125ba;
-    color: white;
+/* active de boton enviar */
+#boton-enviar:active{
+    background-color:#AA14F0 ;
+}
+
+/* focus de boton enviar */
+#boton-enviar:focus{
+    box-shadow: rgba(144, 48, 163, 0.775) 0px 2px 4px 0px, rgba(144, 48, 163, 0.775) 0px 2px 20px 0px;
+}
+
+.pie-de-pagina {
+    background-color: #0000;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -392,18 +578,61 @@ footer {
     line-height: 75px;
 }
 
-.lista-footer {
+.item-footer {
     font-size: 15px;
     margin: 10px;
+    border: 1px solid #0000;
+    padding: 10px;
+    border-radius: 30px;
+    transition: 0.1s;
 }
 
-.redondo {
+/* active de la barra del footer */
+.item-footer:active {
+    box-shadow: rgba(220, 89, 246, 0.775) 0px 2px 4px 0px, rgba(220, 89, 246, 0.775) 0px 2px 20px 0px;
+}
+/* focus de la barra del footer */
+.item-footer:focus {
+    box-shadow: rgba(220, 89, 246, 0.775) 0px 2px 4px 0px, rgba(220, 89, 246, 0.775) 0px 2px 20px 0px;
+    
+}
+
+.icono-footer{
+    color:#AA14F0;
+}
+
+.redondo-footer {
     background-color: white;
     padding: 12px;
     border-radius: 100%;
     margin: 10px;
+    border: 1px solid white;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.1s;
 }
 
+/* hover de los iconos del footer */
+.redondo-footer:hover{
+    border: 1px solid #AA14F0;
+    background-color: black;
+}
+a:hover .icon-footer {
+    color: #AA14F0;
+}
+
+/* active de los iconos del footer */
+.redondo-footer:active{
+    box-shadow: rgba(220, 89, 246, 0.775) 0px 2px 4px 0px, rgba(220, 89, 246, 0.775) 0px 2px 20px 0px;
+}
+
+/* focus de los iconos del footer */
+.redondo-footer:focus{
+    border: 1px solid #AA14F0;
+    background-color: black;
+    box-shadow: rgba(220, 89, 246, 0.775) 0px 2px 4px 0px, rgba(220, 89, 246, 0.775) 0px 2px 20px 0px;
+}
+a:focus .icon-footer {
+    color: #AA14F0;
+}
