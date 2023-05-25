@@ -17,18 +17,18 @@
 
     <header>
         <nav class="navegador">
-            <ul class="lista">
+            <ul class="lista-horizontal">
                 <li>
-                    <a href="#presentacion" class="item-nav">HOLA</a>
+                    <a href="#presentacion" class="item-navegador">HOLA</a>
                 </li>
                 <li>
-                    <a href="#conocimientos" class="item-nav">CONOCIMIENTOS</a>
+                    <a href="#conocimientos" class="item-navegador">CONOCIMIENTOS</a>
                 </li>
                 <li>
-                    <a href="#proyectos"  class="item-nav">PROYECTOS</a>
+                    <a href="#proyectos"  class="item-navegador">PROYECTOS</a>
                 </li>
                 <li>
-                    <a href="#contacto"  class="item-nav" id="boton-contacto">CONTACTO</a>
+                    <a href="#contacto"  class="item-navegador boton">CONTACTO</a>
                 </li>
             </ul>
         </nav>
@@ -39,7 +39,7 @@
         <!-- Sección de presentación -->
 
         <a name="presentacion"></a>
-        <section class="seccion-presentacion">
+        <section class="centrado seccion-presentacion">
             <div class="presentacion">
                 <p class="intro">
                     ¡Hola! soy
@@ -51,15 +51,14 @@
                     Programadora Frontend
                 </p>
                 <div>
-                    <a href="#proyectos" id="boton-presentacion">
+                    <a href="#proyectos" class="item-navegador boton">
                         LO QUE HAGO
                     </a>
                 </div>
             </div>
 
-            <div class="foto">
+            <div>
                 <figure id="img-portada">
-                    <!-- Buscar una foto mia para poner -->
                     <img src="img/software-engineer.svg" alt="Imagen de portada">
                 </figure>
             </div>
@@ -68,8 +67,8 @@
         <!-- Sección de habilidades -->
 
         <a name="conocimientos"></a>
-        <section class="seccion-conocimientos">
-            <h2>
+        <section class="centrado seccion-conocimientos">
+            <h2 class="subtitulo">
                 Mis conocimientos
             </h2>
             <p class="parrafo">
@@ -78,33 +77,33 @@
 
             <!-- tarjetas de lenguajes -->
 
-            <div class="contenedor-conocimiento">
-                <div class="card-conocimiento">
+            <div class="centrado contenedor-tarjetas">
+                <div class="tarjeta-conocimiento">
                     <i class="fa-brands fa-html5"></i>
                     <p class="letra-card-conocimientos">HTML 5</p>
                 </div>
 
-                <div class="card-conocimiento">
+                <div class="tarjeta-conocimiento">
                     <i class="fa-brands fa-css3-alt"></i>
                     <p class="letra-card-conocimientos">CSS 3</p>
                 </div>
 
-                <div class="card-conocimiento">
+                <div class="tarjeta-conocimiento">
                     <i class="fa-brands fa-sass"></i>
                     <p class="letra-card-conocimientos">SASS</p>
                 </div>
 
-                <div class="card-conocimiento">
+                <div class="tarjeta-conocimiento">
                     <i class="fa-brands fa-js"></i>
                     <p class="letra-card-conocimientos">JavaScript</p>
                 </div>
 
-                <div class="card-conocimiento">
+                <div class="tarjeta-conocimiento">
                     <i class="fa-brands fa-react"></i>
                     <p class="letra-card-conocimientos">React</p>
                 </div>
 
-                <div class="card-conocimiento">
+                <div class="tarjeta-conocimiento">
                     <i class="fa-brands fa-git-alt"></i>
                     <p class="letra-card-conocimientos">GIT</p>
                 </div>
@@ -113,24 +112,21 @@
 
         <!-- Sección frase -->
 
-        <section class="seccion-frase">
-        <div class="cita">
-            <i class="fa-solid fa-quote-right"></i>
-
-            <!-- frase motivadora -->
-
-            <p class="frase">
-                Los únicos sueños que se hacen realidad son los que persigues; si no haces nada, no obtienes nada.
-            </p>
-            <h3 class="frase">-Joseph Atser-</h3>
-        </div>
+        <section class="centrado contenedor-frase">
+            <div>
+                <i class="fa-solid fa-quote-right"></i>
+                <p class="frase">
+                    Los únicos sueños que se hacen realidad son los que persigues; si no haces nada, no obtienes nada.
+                </p>
+                <h3 class="frase">-Joseph Atser-</h3>
+            </div>
         </section>
 
         <!-- Sección de proyectos -->
 
         <a name="proyectos"></a>
-        <section class="seccion-proyectos">
-            <h2>
+        <section class="centrado seccion-proyectos">
+            <h2 class="subtitulo">
                 Mis proyectos
             </h2>
             <p class="parrafo">
@@ -141,78 +137,78 @@
 
             <div class="contenedor-proyectos">
 
-                <a href="" class="margin">
-                    <div class="card-proyectos">
+                <a href="" class="margen">
+                    <div class="tarjeta-proyecto">
                         <figure class="img-proyecto">
                             <img src="img/portfolio.png" alt="imagen de presentación del proyecto">
                         </figure>
-                        <p class="letra-card-proyecto">
+                        <p>
                             Portfolio
                         </p>
                     </div>
                 </a>
                 
-                <a href="" class="margin">
-                    <div class="card-proyectos">
+                <a href="" class="margen">
+                    <div class="tarjeta-proyecto">
                         <figure class="img-proyecto">
                             <img src="img/generador-de-memes.png" alt="imagen de presentación del proyecto">
                         </figure>
-                        <p class="letra-card-proyecto">
+                        <p>
                             Generador de memes
                         </p>
                     </div>
                 </a>
                 
-                <a href="" class="margin">
-                    <div class="card-proyectos">
+                <a href="" class="margen">
+                    <div class="tarjeta-proyecto">
                         <figure class="img-proyecto">
                             <img src="img/match3.png" alt="imagen de presentación del proyecto">
                         </figure>
-                        <p class="letra-card-proyecto">
+                        <p>
                             Match 3
                         </p>
                     </div> 
                 </a>
 
-                <a href="" class="margin">
-                    <div class="card-proyectos">
+                <a href="" class="margen">
+                    <div class="tarjeta-proyecto">
                         <figure class="img-proyecto">
                             <img src="img/controlador-de-gastos.png" alt="imagen de presentación del proyecto">
                         </figure>
-                        <p class="letra-card-proyecto">
+                        <p>
                             Controlador de gastos
                         </p>
                     </div>
                 </a>
                 
-                <a href="" class="margin">
-                    <div class="card-proyectos">
+                <a href="" class="margen">
+                    <div class="tarjeta-proyecto">
                         <figure class="img-proyecto">
                             <img src="img/administrador-de-reuniones.png" alt="imagen de presentación del proyecto">
                         </figure>
-                        <p class="letra-card-proyecto">
+                        <p>
                             Administrador de reuniones
                         </p>
                     </div>
                 </a>
 
-                <a href="" class="margin">
-                    <div class="card-proyectos">
+                <a href="" class="margen">
+                    <div class="tarjeta-proyecto">
                         <figure class="img-proyecto">
                             <img src="img/todo-app.png" alt="imagen de presentación del proyecto">
                         </figure>
-                        <p class="letra-card-proyecto">
+                        <p>
                             Todo app
                         </p>
                     </div>
                 </a>
                 
-                <a href="" class="margin">
-                    <div class="card-proyectos">
+                <a href="" class="margen">
+                    <div class="tarjeta-proyecto">
                         <figure class="img-card-pelicula">
                             <img src="img/buscador-de-peliculas.png" alt="imagen de presentación del proyecto">
                         </figure>
-                        <p class="letra-card-proyecto">
+                        <p>
                             Buscador de peliculas
                         </p>
                     </div>
@@ -224,10 +220,10 @@
         <!-- Sección de contacto -->
 
         <a name="contacto"></a> 
-        <section class="seccion-contacto">
-            <div class="contenedor-contacto">
+        <section class="centrado seccion-contacto">
+            <div class="centrado contenedor-contacto">
                 <div class="contactame">
-                    <h2>
+                    <h2 class="subtitulo">
                         Contactame
                     </h2>
                     <p>
@@ -236,32 +232,32 @@
 
                     <!-- Links de contacto -->
 
-                    <ul class="lista-iconos">
+                    <ul class="lista-vertical">
                         <li >
-                            <a href="https://github.com/FlorenciaNieva" class="icono-contacto">
-                                <i class="fa-brands fa-github-alt redondo-icono"></i> FlorenicaNieva
+                            <a href="https://github.com/FlorenciaNieva" class="borde-redes">
+                                <i class="fa-brands fa-github-alt icono-redes circulo-icono icono-contactame"></i> FlorenicaNieva
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.instagram.com/flor_nievaa/" class="letra-black icono-contacto">
-                                <i class="fa-brands fa-instagram redondo-icono"></i> @flor_nievaa
+                            <a href="https://www.instagram.com/flor_nievaa/" class="borde-redes">
+                                <i class="fa-brands fa-instagram icono-redes circulo-icono icono-contactame"></i> @flor_nievaa
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.linkedin.com/in/florencia-nievaa/" class="letra-black icono-contacto">
-                                <i class="fa-brands fa-linkedin redondo-icono"></i> Florenica Nieva
+                            <a href="https://www.linkedin.com/in/florencia-nievaa/" class="borde-redes">
+                                <i class="fa-brands fa-linkedin icono-redes circulo-icono icono-contactame"></i> Florenica Nieva
                             </a>
                         </li>
                         <li>
-                            <a href="mailto:florencianieva930@gmail.com" class="letra-black icono-contacto">
-                                <i class="fa-regular fa-envelope redondo-icono"></i> florencianieva930@gmail.com
+                            <a href="mailto:florencianieva930@gmail.com" class="borde-redes">
+                                <i class="fa-regular fa-envelope icono-redes circulo-icono icono-contactame"></i> florencianieva930@gmail.com
                             </a>
                         </li>
                     </ul>
                 </div>
             
-                <div class="escribime">
-                    <h2>
+                <div class="centrado escribime">
+                    <h2 class="subtitulo">
                         Escribime
                     </h2>
                     <!-- Formulario de contacto-->
@@ -269,11 +265,11 @@
                         <div class="nombre-apellido">
                             <label>
                                 Nombre *
-                                <input type="text" id="name"  placeholder="p. ej.: Florencia"  required>
+                                <input type="text" id="nombre"  placeholder="p. ej.: Florencia"  required>
                             </label>
                             <label>
                                 Apellido *
-                                <input type="text" id="surname" placeholder="p. ej.: Nieva" required>
+                                <input type="text" id="apellido" placeholder="p. ej.: Nieva" required>
                             </label>
                         </div>
                         <label>
@@ -287,7 +283,7 @@
                         <textarea id="mensaje" placeholder="Escriba un mensaje aquí" required></textarea>
                         <!-- bottom enviar-->
                         <div>
-                            <input type="submit" id="boton-enviar" value="Enviar">
+                            <input type="submit" class="boton boton-enviar" value="Enviar">
                         </div>
                         
                     </form>
@@ -300,9 +296,9 @@
     </main>
 
     <!-- Links de navegación y contacto -->
-    <footer class="pie-de-pagina">
+    <footer class="centrado pie-de-pagina">
 
-        <ul class="lista">
+        <ul class="lista-horizontal">
             <li>
                 <a href="#presentacion" class="item-footer">HOLA</a> 
             </li>
@@ -317,25 +313,25 @@
             </li>
         </ul>
 
-        <ul class="lista">
+        <ul class="lista-horizontal">
             <li>
-                <a href="https://github.com/FlorenciaNieva" class="redondo-footer">
-                    <i class="fa-brands fa-github-alt icono-footer"></i>
+                <a href="https://github.com/FlorenciaNieva" class="circulo-icono centrado circulo-footer">
+                    <i class="fa-brands fa-github-alt icono-redes icono-footer"></i>
                 </a>
             </li>
             <li>
-                <a href="https://www.instagram.com/flor_nievaa/" class="redondo-footer">
-                    <i class="fa-brands fa-instagram icono-footer"></i>
+                <a href="https://www.instagram.com/flor_nievaa/" class="circulo-icono centrado circulo-footer">
+                    <i class="fa-brands fa-instagram icono-redes icono-footer"></i>
                 </a>
             </li>
             <li>
-                <a href="https://www.linkedin.com/in/florencia-nievaa/" class="redondo-footer">
-                    <i class="fa-brands fa-linkedin icono-footer"></i>
+                <a href="https://www.linkedin.com/in/florencia-nievaa/" class="circulo-icono centrado circulo-footer">
+                    <i class="fa-brands fa-linkedin icono-redes icono-footer"></i>
                 </a>
             </li>
             <li>
-                <a href="mailto:florencianieva930@gmail.com" class="redondo-footer">
-                    <i class="fa-regular fa-envelope icono-footer"></i>
+                <a href="mailto:florencianieva930@gmail.com" class="circulo-icono centrado circulo-footer">
+                    <i class="fa-regular fa-envelope icono-redes icono-footer"></i>
                 </a>
             </li>
         </ul>
