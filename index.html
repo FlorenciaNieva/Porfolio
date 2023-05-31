@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mi Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/d0ec7b50c3.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d0ec7b50c3.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="img/corazon-favicon.svg" type="image/x-icon">
 </head>
 <body>
 
@@ -57,8 +59,8 @@
                 </div>
             </div>
 
-            <div>
-                <figure id="img-portada">
+            <div class="img-presentacion">
+                <figure>
                     <img src="img/software-engineer.svg" alt="Imagen de portada">
                 </figure>
             </div>
@@ -78,34 +80,35 @@
             <!-- tarjetas de lenguajes -->
 
             <div class="centrado contenedor-tarjetas">
+
                 <div class="tarjeta-conocimiento">
-                    <i class="fa-brands fa-html5"></i>
-                    <p class="letra-card-conocimientos">HTML 5</p>
+                    <i class="fa-brands fa-html5 icono-conocimiento"></i>
+                    <p>HTML 5</p>
                 </div>
 
                 <div class="tarjeta-conocimiento">
-                    <i class="fa-brands fa-css3-alt"></i>
-                    <p class="letra-card-conocimientos">CSS 3</p>
+                    <i class="fa-brands fa-css3-alt icono-conocimiento"></i>
+                    <p>CSS 3</p>
                 </div>
 
                 <div class="tarjeta-conocimiento">
-                    <i class="fa-brands fa-sass"></i>
-                    <p class="letra-card-conocimientos">SASS</p>
+                    <i class="fa-brands fa-sass icono-conocimiento"></i>
+                    <p>SASS</p>
                 </div>
 
                 <div class="tarjeta-conocimiento">
-                    <i class="fa-brands fa-js"></i>
-                    <p class="letra-card-conocimientos">JavaScript</p>
+                    <i class="fa-brands fa-js icono-conocimiento"></i>
+                    <p>JavaScript</p>
                 </div>
 
                 <div class="tarjeta-conocimiento">
-                    <i class="fa-brands fa-react"></i>
-                    <p class="letra-card-conocimientos">React</p>
+                    <i class="fa-brands fa-react icono-conocimiento"></i>
+                    <p>React</p>
                 </div>
 
                 <div class="tarjeta-conocimiento">
-                    <i class="fa-brands fa-git-alt"></i>
-                    <p class="letra-card-conocimientos">GIT</p>
+                    <i class="fa-brands fa-git-alt icono-conocimiento"></i>
+                    <p>GIT</p>
                 </div>
             </div>
         </section>
@@ -135,11 +138,11 @@
 
             <!-- tarjetas de proyectos -->
 
-            <div class="contenedor-proyectos">
+            <div class="centrado contenedor-tarjetas">
 
-                <a href="" class="margen">
+                <a href="" target="_blank">
                     <div class="tarjeta-proyecto">
-                        <figure class="img-proyecto">
+                        <figure>
                             <img src="img/portfolio.png" alt="imagen de presentación del proyecto">
                         </figure>
                         <p>
@@ -148,7 +151,7 @@
                     </div>
                 </a>
                 
-                <a href="" class="margen">
+                <a href="" target="_blank">
                     <div class="tarjeta-proyecto">
                         <figure class="img-proyecto">
                             <img src="img/generador-de-memes.png" alt="imagen de presentación del proyecto">
@@ -159,7 +162,7 @@
                     </div>
                 </a>
                 
-                <a href="" class="margen">
+                <a href="" target="_blank">
                     <div class="tarjeta-proyecto">
                         <figure class="img-proyecto">
                             <img src="img/match3.png" alt="imagen de presentación del proyecto">
@@ -170,7 +173,7 @@
                     </div> 
                 </a>
 
-                <a href="" class="margen">
+                <a href="" target="_blank">
                     <div class="tarjeta-proyecto">
                         <figure class="img-proyecto">
                             <img src="img/controlador-de-gastos.png" alt="imagen de presentación del proyecto">
@@ -181,7 +184,7 @@
                     </div>
                 </a>
                 
-                <a href="" class="margen">
+                <a href="" target="_blank">
                     <div class="tarjeta-proyecto">
                         <figure class="img-proyecto">
                             <img src="img/administrador-de-reuniones.png" alt="imagen de presentación del proyecto">
@@ -192,7 +195,7 @@
                     </div>
                 </a>
 
-                <a href="" class="margen">
+                <a href="" target="_blank">
                     <div class="tarjeta-proyecto">
                         <figure class="img-proyecto">
                             <img src="img/todo-app.png" alt="imagen de presentación del proyecto">
@@ -203,9 +206,9 @@
                     </div>
                 </a>
                 
-                <a href="" class="margen">
+                <a href="" target="_blank">
                     <div class="tarjeta-proyecto">
-                        <figure class="img-card-pelicula">
+                        <figure class="img-proyecto">
                             <img src="img/buscador-de-peliculas.png" alt="imagen de presentación del proyecto">
                         </figure>
                         <p>
@@ -227,60 +230,87 @@
                         Contactame
                     </h2>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nihil temporibus maiores molestias ipsa culpa nostrum molestiae est quasi ab.
+                        Si tienes alguna pregunta no dudes en contactarme. Estoy disponible también a través de correo electrónico y redes sociales.
                     </p>
 
                     <!-- Links de contacto -->
 
                     <ul class="lista-vertical">
-                        <li >
-                            <a href="https://github.com/FlorenciaNieva" class="borde-redes">
-                                <i class="fa-brands fa-github-alt icono-redes circulo-icono icono-contactame"></i> FlorenicaNieva
+
+                        <div>
+                            <li>
+                                <a href="https://github.com/FlorenciaNieva" target="_blank" class="borde-redes">
+                                <i class="fa-brands fa-github-alt icono-redes circulo-icono"></i> FlorenicaNieva
                             </a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/flor_nievaa/" class="borde-redes">
-                                <i class="fa-brands fa-instagram icono-redes circulo-icono icono-contactame"></i> @flor_nievaa
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/flor_nievaa/" target="_blank" class="borde-redes">
+                                    <i class="fa-brands fa-instagram icono-redes circulo-icono"></i> @flor_nievaa
+                                </a>
+                            </li>
+                        </div>
+
+                        <div>
+                            <li>
+                                <a href="https://www.linkedin.com/in/florencia-nievaa/" target="_blank" class="borde-redes">
+                                <i class="fa-brands fa-linkedin icono-redes circulo-icono"></i> Florenica Nieva
                             </a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/florencia-nievaa/" class="borde-redes">
-                                <i class="fa-brands fa-linkedin icono-redes circulo-icono icono-contactame"></i> Florenica Nieva
-                            </a>
-                        </li>
-                        <li>
-                            <a href="mailto:florencianieva930@gmail.com" class="borde-redes">
-                                <i class="fa-regular fa-envelope icono-redes circulo-icono icono-contactame"></i> florencianieva930@gmail.com
-                            </a>
-                        </li>
+                            </li>
+                            <li>
+                                <a href="mailto:flornieva160@gmail.com" target="_blank" class="borde-redes">
+                                    <i class="fa-regular fa-envelope icono-redes circulo-icono"></i> flornieva160@gmail.com
+                                </a>
+                            </li>
+                        </div>
+                        
                     </ul>
+
                 </div>
             
-                <div class="centrado escribime">
+                <div class="escribime">
                     <h2 class="subtitulo">
                         Escribime
                     </h2>
                     <!-- Formulario de contacto-->
-                    <form id="contacto">
-                        <div class="nombre-apellido">
-                            <label>
-                                Nombre *
-                                <input type="text" id="nombre"  placeholder="p. ej.: Florencia"  required>
-                            </label>
-                            <label>
-                                Apellido *
-                                <input type="text" id="apellido" placeholder="p. ej.: Nieva" required>
-                            </label>
+                    <form id="form-contacto" class="form-contacto">
+
+                        <div class="inputs-horizontales">
+
+                            <div>
+                                <label>
+                                    Nombre *
+                                    <input type="text" id="nombre"  placeholder="p. ej.: Florencia"  required>
+                                    <i class="fa-regular fa-circle-check validacion-texto"></i>
+                                    <i class="fa-regular fa-circle-xmark invalidacion-texto"></i>
+                                </label>
+                            </div>
+                            
+                            <div>
+                                <label>
+                                    Apellido *
+                                    <input type="text" id="apellido" placeholder="p. ej.: Nieva" required>
+                                    <i class="fa-regular fa-circle-check validacion-texto" ></i>
+                                    <i class="fa-regular fa-circle-xmark invalidacion-texto"></i>
+                                </label>
+                            </div>
+                            
+
                         </div>
+
                         <label>
                             Email *
                             <input type="email" id="email" placeholder="p. ej.: florencianieva930@gmail.com" required>
+                            <i class="fa-regular fa-circle-check icono-validacion" ></i>
+                            <i class="fa-regular fa-circle-xmark icono-invalidacion"></i>
                         </label>
-                        <label for="mensaje">
-                            Mensaje *
-                        </label>
+
                         <!-- textarea -->
-                        <textarea id="mensaje" placeholder="Escriba un mensaje aquí" required></textarea>
+                        <label>
+                            Mensaje *
+                            <textarea id="mensaje" class="mensaje" placeholder="Escriba un mensaje aquí" required></textarea>
+                            <i class="fa-regular fa-circle-check icono-validacion" ></i>
+                            <i class="fa-regular fa-circle-xmark icono-invalidacion"></i>
+                        </label>
                         <!-- bottom enviar-->
                         <div>
                             <input type="submit" class="boton boton-enviar" value="Enviar">
@@ -296,7 +326,7 @@
     </main>
 
     <!-- Links de navegación y contacto -->
-    <footer class="centrado pie-de-pagina">
+    <footer class="centrado pie-pagina">
 
         <ul class="lista-horizontal">
             <li>
@@ -315,28 +345,28 @@
 
         <ul class="lista-horizontal">
             <li>
-                <a href="https://github.com/FlorenciaNieva" class="circulo-icono centrado circulo-footer">
+                <a href="https://github.com/FlorenciaNieva" target="_blank" class="circulo-icono centrado circulo-footer">
                     <i class="fa-brands fa-github-alt icono-redes icono-footer"></i>
                 </a>
             </li>
             <li>
-                <a href="https://www.instagram.com/flor_nievaa/" class="circulo-icono centrado circulo-footer">
+                <a href="https://www.instagram.com/flor_nievaa/" target="_blank" class="circulo-icono centrado circulo-footer">
                     <i class="fa-brands fa-instagram icono-redes icono-footer"></i>
                 </a>
             </li>
             <li>
-                <a href="https://www.linkedin.com/in/florencia-nievaa/" class="circulo-icono centrado circulo-footer">
+                <a href="https://www.linkedin.com/in/florencia-nievaa/" target="_blank" class="circulo-icono centrado circulo-footer">
                     <i class="fa-brands fa-linkedin icono-redes icono-footer"></i>
                 </a>
             </li>
             <li>
-                <a href="mailto:florencianieva930@gmail.com" class="circulo-icono centrado circulo-footer">
+                <a href="mailto:flornieva160@gmail.com" target="_blank" class="circulo-icono centrado circulo-footer">
                     <i class="fa-regular fa-envelope icono-redes icono-footer"></i>
                 </a>
             </li>
         </ul>
 
-        <p>Hecho con 💜 por Flor Nieva</p>
+        <p>Hecho con &#128156; por Flor</p>
     </footer>
 </body>
 </html>
