@@ -6,22 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/d0ec7b50c3.js" crossorigin="anonymous"></script>
+    <!-- GoogleFonts -->
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@800&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/d0ec7b50c3.js" crossorigin="anonymous"></script>
+    <!-- Favicon -->
     <link rel="shortcut icon" href="img/corazon-favicon.svg" type="image/x-icon">
     <!-- Etiquetas OpenGraph -->
     <meta property="og:title" content="Portfolio">
     <meta property="og:description" content="Presentación de los conocimientos que tengo y proyectos en proceso.">
-    <meta property="og:image" content="img/software-engineer">
+    <meta property="og:image" content="img/portfolio.png">
     <meta property="og:site_name" content="https://florencianieva.github.io/Portfolio/">
     <meta property="og:type" content="website">
-
 </head>
-<body>
 
+<body>
     <!-- Links de navegación -->
 
     <header>
@@ -49,6 +50,7 @@
 
         <a name="presentacion"></a>
         <section class="centrado seccion-presentacion">
+
             <div class="presentacion">
                 <p class="intro">
                     ¡Hola! soy
@@ -68,15 +70,16 @@
 
             <div class="img-presentacion">
                 <figure>
-                    <img src="img/software-engineer.svg" alt="Imagen de portada">
+                    <img src="img/software-engineer.svg" alt="Chica con computadora">
                 </figure>
             </div>
+
         </section>
-    
+
         <!-- Sección de habilidades -->
 
         <a name="conocimientos"></a>
-        <section class="centrado seccion-conocimientos">
+        <section class="centrado seccion-habilidades">
             <h2 class="subtitulo">
                 Mis conocimientos
             </h2>
@@ -120,9 +123,9 @@
             </div>
         </section>
 
-        <!-- Sección frase -->
+        <!-- Sección cita -->
 
-        <section class="centrado contenedor-frase">
+        <section class="centrado seccion-cita">
             <div>
                 <i class="fa-solid fa-quote-right"></i>
                 <p class="frase">
@@ -150,29 +153,29 @@
                 <a href="https://florencianieva.github.io/Portfolio/" target="_blank">
                     <div class="tarjeta-proyecto">
                         <figure>
-                            <img src="img/portfolio.png" alt="imagen de presentación del proyecto">
+                            <img src="img/portfolio.png" alt="Presentación del proyecto portfolio">
                         </figure>
                         <p>
                             Portfolio
                         </p>
                     </div>
                 </a>
-                
+
                 <a href="" target="_blank">
                     <div class="tarjeta-proyecto">
                         <figure class="img-proyecto">
-                            <img src="img/generador-de-memes.png" alt="imagen de presentación del proyecto">
+                            <img src="img/generador-de-memes.png" alt="Presentación del proyecto generador de memes">
                         </figure>
                         <p>
                             Generador de memes
                         </p>
                     </div>
                 </a>
-                
+
                 <a href="" target="_blank">
                     <div class="tarjeta-proyecto">
                         <figure class="img-proyecto">
-                            <img src="img/match3.png" alt="imagen de presentación del proyecto">
+                            <img src="img/match3.png" alt="Presentación del proyecto match 3">
                         </figure>
                         <p>
                             Match 3
@@ -183,18 +186,18 @@
                 <a href="" target="_blank">
                     <div class="tarjeta-proyecto">
                         <figure class="img-proyecto">
-                            <img src="img/controlador-de-gastos.png" alt="imagen de presentación del proyecto">
+                            <img src="img/controlador-de-gastos.png" alt="Presentación del proyecto controlador de gastos">
                         </figure>
                         <p>
                             Controlador de gastos
                         </p>
                     </div>
                 </a>
-                
+
                 <a href="" target="_blank">
                     <div class="tarjeta-proyecto">
                         <figure class="img-proyecto">
-                            <img src="img/administrador-de-reuniones.png" alt="imagen de presentación del proyecto">
+                            <img src="img/administrador-de-reuniones.png" alt="Presentación del proyecto administrador de reuniones">
                         </figure>
                         <p>
                             Administrador de reuniones
@@ -205,7 +208,7 @@
                 <a href="" target="_blank">
                     <div class="tarjeta-proyecto">
                         <figure class="img-proyecto">
-                            <img src="img/todo-app.png" alt="imagen de presentación del proyecto">
+                            <img src="img/todo-app.png" alt="Presentación del proyecto todo app">
                         </figure>
                         <p>
                             Todo app
@@ -216,14 +219,14 @@
                 <a href="" target="_blank">
                     <div class="tarjeta-proyecto">
                         <figure class="img-proyecto">
-                            <img src="img/buscador-de-peliculas.png" alt="imagen de presentación del proyecto">
+                            <img src="img/buscador-de-peliculas.png" alt="Presentación del proyecto buscador de peliculas">
                         </figure>
                         <p>
                             Buscador de peliculas
                         </p>
                     </div>
                 </a>
-                
+
             </div> 
         </section>
 
@@ -246,128 +249,140 @@
 
                         <div>
                             <li>
-                                <a href="https://github.com/FlorenciaNieva" target="_blank" class="borde-redes">
-                                <i class="fa-brands fa-github-alt icono-redes circulo-icono"></i> FlorenicaNieva
-                            </a>
+                                <a href="https://github.com/FlorenciaNieva" target="_blank" class="borde-redes" aria-label="GitHub">
+                                    <i class="fa-brands fa-github-alt icono-redes circulo-icono" aria-hidden="true"></i> FlorenicaNieva
+                                </a>
                             </li>
                             <li>
-                                <a href="https://www.instagram.com/flor_nievaa/" target="_blank" class="borde-redes">
-                                    <i class="fa-brands fa-instagram icono-redes circulo-icono"></i> @flor_nievaa
+                                <a href="https://www.instagram.com/flor_nievaa/" target="_blank" class="borde-redes" aria-label="Instagram">
+                                    <i class="fa-brands fa-instagram icono-redes circulo-icono"  aria-hidden="true"></i> @flor_nievaa
                                 </a>
                             </li>
                         </div>
 
                         <div>
                             <li>
-                                <a href="https://www.linkedin.com/in/florencia-nievaa/" target="_blank" class="borde-redes">
-                                <i class="fa-brands fa-linkedin icono-redes circulo-icono"></i> Florenica Nieva
-                            </a>
+                                <a href="https://www.linkedin.com/in/florencia-nievaa/" target="_blank" class="borde-redes" aria-label="Linkedin">
+                                    <i class="fa-brands fa-linkedin icono-redes circulo-icono"  aria-hidden="true"></i> Florenica Nieva
+                                </a>
                             </li>
                             <li>
-                                <a href="mailto:flornieva160@gmail.com" target="_blank" class="borde-redes">
-                                    <i class="fa-regular fa-envelope icono-redes circulo-icono"></i> flornieva160@gmail.com
+                                <a href="mailto:flornieva160@gmail.com" target="_blank" class="borde-redes" aria-label="Email">
+                                    <i class="fa-regular fa-envelope icono-redes circulo-icono"  aria-hidden="true"></i> flornieva160@gmail.com
                                 </a>
                             </li>
                         </div>
-                        
-                    </ul>
 
+                    </ul>
                 </div>
-            
+
                 <div class="escribime">
                     <h2 class="subtitulo">
                         Escribime
                     </h2>
+
                     <!-- Formulario de contacto-->
-                    <form id="form-contacto" class="form-contacto">
+
+                    <form id="formulario-contacto" class="formulario-contacto">
 
                         <div class="inputs-horizontales">
-
                             <div>
                                 <label>
                                     Nombre *
                                     <input type="text" id="nombre"  placeholder="p. ej.: Florencia"  required>
-                                    <i class="fa-regular fa-circle-check validacion-texto"></i>
-                                    <i class="fa-regular fa-circle-xmark invalidacion-texto"></i>
+                                    <i class="fa-regular fa-circle-check validacion-icono" aria-hidden="true"></i>
+                                    <i class="fa-regular fa-circle-xmark invalidacion-icono" aria-hidden="true"></i>
                                 </label>
                             </div>
-                            
+
                             <div>
                                 <label>
                                     Apellido *
                                     <input type="text" id="apellido" placeholder="p. ej.: Nieva" required>
-                                    <i class="fa-regular fa-circle-check validacion-texto" ></i>
-                                    <i class="fa-regular fa-circle-xmark invalidacion-texto"></i>
+                                    <i class="fa-regular fa-circle-check validacion-icono" aria-hidden="true"></i>
+                                    <i class="fa-regular fa-circle-xmark invalidacion-icono" aria-hidden="true"></i>
                                 </label>
                             </div>
-                            
-
                         </div>
 
-                        <label>
-                            Email *
-                            <input type="email" id="email" placeholder="p. ej.: florencianieva930@gmail.com" required>
-                            <i class="fa-regular fa-circle-check icono-validacion" ></i>
-                            <i class="fa-regular fa-circle-xmark icono-invalidacion"></i>
-                        </label>
+                        <div>
+                            <label>
+                                Email *
+                                <input type="email" id="email" placeholder="p. ej.: flornieva160@gmail.com" required>
+                                <i class="fa-regular fa-circle-check validacion-icono" aria-hidden="true"></i>
+                                <i class="fa-regular fa-circle-xmark invalidacion-icono" aria-hidden="true"></i>
+                            </label>
+                        </div>
 
-                        <!-- textarea -->
-                        <label>
-                            Mensaje *
-                            <textarea id="mensaje" class="mensaje" placeholder="Escriba un mensaje aquí" required></textarea>
-                            <i class="fa-regular fa-circle-check icono-validacion" ></i>
-                            <i class="fa-regular fa-circle-xmark icono-invalidacion"></i>
-                        </label>
+                        <div>
+                            <label>
+                                Mensaje *
+                                <!-- textarea -->
+                                <textarea id="mensaje" class="mensaje" placeholder="Escriba un mensaje aquí" required></textarea>
+                                <i class="fa-regular fa-circle-check validacion-icono" aria-hidden="true"></i>
+                                <i class="fa-regular fa-circle-xmark invalidacion-icono" aria-hidden="true"></i>
+                            </label>
+                        </div>
+
                         <!-- bottom enviar-->
                         <div>
                             <input type="submit" class="boton boton-enviar" value="Enviar">
                         </div>
-                        
-                    </form>
 
-                    
+                    </form>
                 </div>
             </div>
         </section>
 
     </main>
 
-    <!-- Links de navegación y contacto -->
     <footer class="centrado pie-pagina">
+
+        <!-- Links de navegación-->
 
         <ul class="lista-horizontal">
             <li>
-                <a href="#presentacion" class="item-footer">HOLA</a> 
+                <a href="#presentacion" class="item-footer">
+                    HOLA
+                </a> 
             </li>
             <li >
-                <a href="#conocimientos" class="item-footer">CONOCIMIENTOS</a> 
+                <a href="#conocimientos" class="item-footer">
+                    CONOCIMIENTOS
+                </a> 
             </li>
             <li>
-                <a href="#proyectos" class="item-footer">PROYECTOS</a> 
+                <a href="#proyectos" class="item-footer">
+                    PROYECTOS
+                </a> 
             </li>
             <li>
-                <a href="#contacto" class="item-footer">CONTACTO</a> 
+                <a href="#contacto" class="item-footer">
+                    CONTACTO
+                </a> 
             </li>
         </ul>
 
+        <!-- Links de contacto -->
+
         <ul class="lista-horizontal">
             <li>
-                <a href="https://github.com/FlorenciaNieva" target="_blank" class="circulo-icono centrado circulo-footer">
+                <a href="https://github.com/FlorenciaNieva" target="_blank" class="circulo-icono centrado circulo-footer" aria-label="GitHub">
                     <i class="fa-brands fa-github-alt icono-redes icono-footer"></i>
                 </a>
             </li>
             <li>
-                <a href="https://www.instagram.com/flor_nievaa/" target="_blank" class="circulo-icono centrado circulo-footer">
+                <a href="https://www.instagram.com/flor_nievaa/" target="_blank" class="circulo-icono centrado circulo-footer" aria-label="Instagram">
                     <i class="fa-brands fa-instagram icono-redes icono-footer"></i>
                 </a>
             </li>
             <li>
-                <a href="https://www.linkedin.com/in/florencia-nievaa/" target="_blank" class="circulo-icono centrado circulo-footer">
+                <a href="https://www.linkedin.com/in/florencia-nievaa/" target="_blank" class="circulo-icono centrado circulo-footer" aria-label="Linkedin">
                     <i class="fa-brands fa-linkedin icono-redes icono-footer"></i>
                 </a>
             </li>
             <li>
-                <a href="mailto:flornieva160@gmail.com" target="_blank" class="circulo-icono centrado circulo-footer">
+                <a href="mailto:flornieva160@gmail.com" target="_blank" class="circulo-icono centrado circulo-footer" aria-label="Email">
                     <i class="fa-regular fa-envelope icono-redes icono-footer"></i>
                 </a>
             </li>

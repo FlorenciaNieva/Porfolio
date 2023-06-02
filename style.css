@@ -13,12 +13,6 @@ body {
     color: white;
 }
 
-header {
-    position: sticky;
-    top:0;
-    z-index: 2;
-}
-
 ul {
     padding: 0;
 }
@@ -28,12 +22,27 @@ a {
     color: white;
 }
 
-a:focus{
+a:focus {
     outline: none;
 }
 
 p {
     font-size: 20rem;
+}
+
+.centrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Comienzo del HEARDER */
+
+header {
+    position: sticky;
+    top:0;
+    z-index: 2;
 }
 
 .navegador {
@@ -97,12 +106,9 @@ p {
     box-shadow: rgba(144, 48, 163, 0.775) 0px 2px 4px 0px, rgba(144, 48, 163, 0.775) 0px 2px 20px 0px;
 }
 
-.centrado {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
+/* Fin del HEADER */
+
+/* Comienzo de la SECCIÓN PRESENTACIÓN */
 
 .seccion-presentacion {
     justify-content: space-around;
@@ -146,7 +152,11 @@ img {
     display: block;
 }
 
-.seccion-conocimientos {
+/* Fin de la SECCIÓN PRESENTACIÓN */
+
+/* Comienzo de la SECCIÓN DE HABILIDADES */
+
+.seccion-habilidades {
     flex-direction: column;
     padding: 150px;
     background-color: #AA14F0;
@@ -224,7 +234,11 @@ img {
     font-size: 80rem;
 }
 
-.contenedor-frase {
+/* Fin de la SECCIÓN DE HABILIDADES */
+
+/* Comienzo de la SECCIÓN CITA */
+
+.seccion-cita {
     background-color:#8204b4;
     padding: 150px 250px;
     flex-direction: column;
@@ -240,6 +254,10 @@ img {
     font-size: 20rem;
     margin: 20px;
 }
+
+/* Fin de la SECCIÓN CITA */
+
+/* Comienzo de la SECCIÓN PROYECTOS */
 
 .seccion-proyectos {
     flex-direction: column;
@@ -284,6 +302,10 @@ a:focus .tarjeta-proyecto {
     border: 1px solid white;
     box-shadow: rgba(255, 255, 255, 0.744) 0px 2px 4px 0px, rgba(255, 255, 255, 0.775) 0px 2px 20px 0px;
 }
+
+/* Fin de la SECCIÓN PROYECTOS */
+
+/* Comienzo de la sección Contacto */
 
 .seccion-contacto {
     background-color: #3F0071;
@@ -373,7 +395,7 @@ a:focus .tarjeta-proyecto {
     padding-top: 100px;
 }
 
-/* FORMULARIO */
+/* Comienzo del FORMULARIO */
 
 .form-contacto {
     display: flex;
@@ -385,7 +407,6 @@ a:focus .tarjeta-proyecto {
 label {
     font-size: 18rem;
     font-weight: 1000;
-    margin-right: 15px;
     position: relative;
     z-index: 1;
 }
@@ -396,11 +417,10 @@ input:not(input[type="submit"]), textarea {
     width: 100%;
     margin-top: 10px;
     margin-bottom: 15px;
-    border-radius: 20px;
     padding: 12px;
-    box-sizing: border-box;
     background-color: #f4e9f6;
     border: none;
+    border-radius: 20px;
     outline: none;
     transition: 0.2s;
 }
@@ -408,33 +428,21 @@ input:not(input[type="submit"]), textarea {
 .inputs-horizontales {
     display: flex;
     justify-content: space-between;
-    width: 98%;
+    width: 100%;
 }
 
-.inputs-horizontales div{
-    position: relative;
-    z-index: 1;
-    width: 49%;
+.inputs-horizontales div {
+    width: 48%;
 }
 
 .mensaje {
     height: 120px;
 }
 
-.fa-circle-check{
+.fa-circle-check {
     font-size: 0rem;
     color: rgb(67, 250, 67);
     position: absolute;
-}
-
-.validacion-texto{
-    top: 42px;
-    left: 160px;
-}
-
-.icono-validacion {
-    bottom: 25px;
-    right: 11px;
 }
 
 .fa-circle-xmark {
@@ -443,45 +451,43 @@ input:not(input[type="submit"]), textarea {
     position: absolute;
 }
 
-.invalidacion-texto{
-    top: 42px;
-    left: 160px;
+.validacion-icono {
+    bottom: 8px;
+    right: 8px;
 }
 
-.icono-invalidacion{
-    bottom: 25px;
-    right: 11px;
+.invalidacion-icono {
+    bottom: 8px;
+    right: 8px;
 }
-
-/* Focus de los inputs */
 
 input:focus, textarea:focus {
     box-shadow: rgba(220, 89, 246, 0.775) 0px 2px 4px 0px, rgba(220, 89, 246, 0.775) 0px 2px 20px 0px;
 }
 
-/* Valid de los inputs*/
 input:not(:placeholder-shown):valid:not(input[type="submit"]) {
     border: 1px solid rgb(67, 250, 67);
     box-shadow: rgba(89, 246, 89, 0.775) 0px 2px 4px 0px, rgba(89, 246, 89, 0.775) 0px 2px 20px 0px;
 }
-input:not(:placeholder-shown):valid ~ .fa-circle-check{
+
+input:not(:placeholder-shown):valid ~ .fa-circle-check {
     font-size: 20rem;
 }
 
-/* Invalid de los inputs */
 input:not(:placeholder-shown):invalid:not(input[type="submit"]) {
     border: 1px solid red;
     box-shadow: rgba(251, 60, 60, 0.775) 0px 2px 4px 0px, rgba(251, 60, 60, 0.775) 0px 2px 20px 0px;
 }
-input:not(:placeholder-shown):invalid ~ .fa-circle-xmark{
+
+input:not(:placeholder-shown):invalid ~ .fa-circle-xmark {
     font-size: 20rem;
 }
 
-/* valid y invalid del textarea */
 textarea:not(:placeholder-shown):valid {
     border: 1px solid rgb(67, 250, 67);
     box-shadow: rgba(89, 246, 89, 0.775) 0px 2px 4px 0px, rgba(89, 246, 89, 0.775) 0px 2px 20px 0px;
 }
+
 textarea:not(:placeholder-shown):valid ~ .fa-circle-check{
     font-size: 20rem;
 }
@@ -490,9 +496,12 @@ textarea:not(:placeholder-shown):invalid {
     border: 1px solid red;
     box-shadow: rgba(251, 60, 60, 0.775) 0px 2px 4px 0px, rgba(251, 60, 60, 0.775) 0px 2px 20px 0px;
 }
-textarea:not(:placeholder-shown):invalid ~ .fa-circle-check{
+
+textarea:not(:placeholder-shown):invalid ~ .fa-circle-check {
     font-size: 20rem;
 }
+
+/* Fin del FORMULARIO */
 
 .boton-enviar {
     border: none;
@@ -500,7 +509,9 @@ textarea:not(:placeholder-shown):invalid ~ .fa-circle-check{
     outline: none;
 }
 
-/* FOOTER */
+/* Fin de la SECCIÓN CONTACTO */
+
+/* Comienzo del FOOTER */
 
 .pie-pagina {
     background-color: #00000000;
@@ -509,7 +520,7 @@ textarea:not(:placeholder-shown):invalid ~ .fa-circle-check{
     line-height: 75px;
 }
 
-.pie-pagina p{
+.pie-pagina p {
     font-size: 17rem;
 }
 
@@ -546,6 +557,7 @@ textarea:not(:placeholder-shown):invalid ~ .fa-circle-check{
     border: 1px solid #AA14F0;
     background-color: black;
 }
+
 a:hover .icono-footer {
     color: #AA14F0;
 }
@@ -563,75 +575,89 @@ a:hover .icono-footer {
 a:focus .icono-footer {
     color: #AA14F0;
 }
+/* Fin del FOOTER */
 
-/* Media Queries */
+/* Comienzo de las MEDIA QUERIES */
 
 @media (min-width:1101px) and (max-width:1319px){
-    .seccion-conocimientos {
+    .seccion-habilidades {
         padding: 120px;
     }
-    .seccion-presentacion{
+
+    .seccion-presentacion {
         padding: 110px 50px;
     }
-    .tarjeta-proyecto{
+
+    .tarjeta-proyecto {
         width: 29vw;
     }
-    .seccion-contacto{
+
+    .seccion-contacto {
         padding: 150px 50px 150px 50px;
     }
 }
 
 @media (max-width:1100px){
-    header{
+    header {
         display: none;
     }
-    .seccion-presentacion{
+
+    .seccion-presentacion {
         display: flex;
         flex-direction: column;
         text-align: center;
         margin-top: 90px;
     }
-    .img-presentacion{
+
+    .img-presentacion {
         margin-top: 50px;
     }
-    .seccion-conocimientos {
+
+    .seccion-habilidades {
         padding: 120px;
     }
-    .tarjeta-proyecto{
+
+    .tarjeta-proyecto {
         width: 30vw;
     }
-    .seccion-contacto{
+
+    .seccion-contacto {
         padding: 150px 35px 150px 35px;
     }
-    
 }
 
 @media (max-width:1085px){
-    .contenedor-frase{
+    .seccion-cita {
         padding: 150px 50px;
     }
+
     .tarjeta-proyecto figure {
         height: 200px;
     }
 }
 
 @media (max-width:1049px){
-    .seccion-presentacion{
+    .seccion-presentacion {
         padding: 110px 5px;
     }
-    .seccion-conocimientos {
+
+    .seccion-habilidades {
         padding: 120px 0px;
     }
+
     .tarjeta-proyecto figure {
         height: 230px;
     }
-    .tarjeta-proyecto p{
+
+    .tarjeta-proyecto p {
         font-size: 18rem;
     }
-    .contactame{
+
+    .contactame {
         padding-right: 30px;
     }
-    .escribime{
+
+    .escribime {
         padding-left: 30px;
     }
 }
@@ -640,68 +666,84 @@ a:focus .icono-footer {
     .tarjeta-proyecto figure {
         height: 170px;
     }
-    .tarjeta-proyecto p{
+
+    .tarjeta-proyecto p {
         font-size: 16rem;
-    } 
-    .contactame{
+    }
+    
+    .contactame {
         padding-right: 0px;
     }
-    .escribime{
+
+    .escribime {
         padding-left: 0px;
     }
 }
 
 @media (max-width:900px){
-    .seccion-conocimientos{
+    .seccion-habilidades {
         padding: 120px 50px;
     }
-    .contenedor-tarjetas{
+
+    .contenedor-tarjetas {
         margin-top: 10px;
     }
-    .tarjeta-proyecto{
+
+    .tarjeta-proyecto {
         width: 45vw;
     }
+
     .tarjeta-proyecto figure {
         height: 300px;
     }
-    .tarjeta-proyecto p{
+
+    .tarjeta-proyecto p {
         font-size: 18rem;
     }
-    .seccion-contacto{
+
+    .seccion-contacto {
         background-color: white;
         padding: 50px 0px;
     }
-    .contenedor-contacto{
+
+    .contenedor-contacto {
         flex-direction: column;
         align-items: flex-start;
         border: none;
     }
+
     .contactame {
         padding-left: 40px;
         width: 100%;
     }
-    .contactame p{
+
+    .contactame p {
         width: 60%;
     }
+
     .lista-vertical div {
         margin-top: 10px;
         display: flex;
         justify-content: space-between;
         width: 100%;
     }
-    .lista-vertical div li{
+
+    .lista-vertical div li {
         width: 50%;
     }
+
     .escribime {
         padding: 40px;
         width: 100%;
     }
+
     .mensaje {
         height: 180px;
     } 
 }
-@media (max-width:850px){
-    .presentacion{
+
+@media (max-width:858px){
+    .presentacion {
         width: 100%;
     }
 
@@ -709,151 +751,188 @@ a:focus .icono-footer {
         height: 250px;
     }
 }
+
 @media (max-width:800px){
     .tarjeta-proyecto figure {
         height: 230px;
     }
-    .parrafo{
+
+    .parrafo {
         width: 80%;
     }
 }
+
 @media (max-width:700px){
-    
-    .pie-pagina .lista-horizontal .item-footer{
+    .pie-pagina .lista-horizontal .item-footer {
         display: none;
     }
 }
+
 @media (max-width:660px){
-    .seccion-conocimientos{
+    .seccion-habilidades {
         padding: 120px 30px;
     }
+
     .tarjeta-proyecto figure {
         height: 210px;
     }
-    .tarjeta-proyecto p{
+
+    .tarjeta-proyecto p {
         font-size: 16rem;
     }
-    .lista-vertical a{
+
+    .lista-vertical a {
         font-size: 17rem;
     }
 }
+
 @media (max-width:600px){
     .tarjeta-proyecto figure {
         height: 180px;
     }
-    .lista-vertical a{
+
+    .lista-vertical a {
         font-size: 16rem;
     }
 }
+
 @media (max-width:580px){
-    .seccion-conocimientos{
+    .seccion-habilidades {
         padding: 150px 0px 100px 0px;
     }
-    .tarjeta-conocimiento{
+    
+    .tarjeta-conocimiento {
         padding: 40px 60px;
         width: 45vw;
     }
-    .icono-conocimiento{
+
+    .icono-conocimiento {
         font-size: 70px;
     }
-    .tarjeta-proyecto p{
+
+    .tarjeta-proyecto p {
         font-size: 15rem;
     }
-    .lista-vertical a{
+
+    .lista-vertical a {
         font-size: 15rem;
     }
 }
 
 @media (max-width:550px){
-    .nombre{
+    .nombre {
         font-size: 50rem;
     }
-    .img-presentacion{
+
+    .img-presentacion {
         width: 90vw;
     }
-    .subtitulo{
+
+    .subtitulo {
         font-size: 40rem;
     }
-    .parrafo{
+
+    .parrafo {
         font-size: 18rem;
     }
-    .tarjeta-proyecto{
+
+    .tarjeta-proyecto {
         width: 90vw;
     }
+
     .tarjeta-proyecto figure {
         height: 320px;
     }
-    .tarjeta-proyecto p{
+
+    .tarjeta-proyecto p {
         font-size: 20rem;
     }
-    .contactame{
+
+    .contactame {
         padding-left: 20px;
     }
-    .contactame p{
+
+    .contactame p {
         width: 80%;
     }
-    .escribime{
+
+    .escribime {
         padding: 20px;
     }
+
     .lista-vertical div {
         margin-top: 0px;
         flex-direction: column;
     }
-    .lista-vertical div li{
+
+    .lista-vertical div li {
         width: 100%;
     }
-    .lista-vertical a{
+
+    .lista-vertical a {
         font-size: 18rem;
     }
-    .inputs-horizontales{
+
+    .inputs-horizontales {
         flex-direction: column;
     }
-    .inputs-horizontales div{
+
+    .inputs-horizontales div {
         width: 100%;
     }
 }
 
 @media (max-width:450px){
-    .tarjeta-conocimiento{
+    .tarjeta-conocimiento {
         padding: 40px;
         width: 40vw;
     }
-    .icono-conocimiento{
+
+    .icono-conocimiento {
         font-size: 50px;
     }
-    .tarjeta-conocimiento p{
+
+    .tarjeta-conocimiento p {
         font-size: 18rem;
     }
+
     .tarjeta-proyecto figure {
         height: 250px;
     }
-    .tarjeta-proyecto p{
+
+    .tarjeta-proyecto p {
         font-size: 18rem;
     }
 }
 
 @media (max-width:370px){
-    .tarjeta-conocimiento{
+    .tarjeta-conocimiento {
         padding: 30px;
     }
 }
 
 @media (max-width:350px){
-    .subtitulo{
+    .subtitulo {
         font-size: 35rem;
     }
-    .tarjeta-conocimiento{
+
+    .tarjeta-conocimiento {
         width: 180px;
     }
+
     .frase {
         font-size: 15rem;
         margin: 0px;
         margin-bottom: 20px;
     }
+
     .tarjeta-proyecto figure {
         height: 200px;
     }
-    .lista-vertical a{
+
+    .lista-vertical a {
         font-size: 16rem;
     }
 }
+
+/* Fin de las MEDIA QUERIES */
