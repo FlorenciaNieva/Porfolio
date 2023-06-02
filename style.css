@@ -37,7 +37,7 @@ p {
     text-align: center;
 }
 
-/* Comienzo del HEARDER */
+/* Comienzo del HEADER */
 
 header {
     position: sticky;
@@ -305,7 +305,7 @@ a:focus .tarjeta-proyecto {
 
 /* Fin de la SECCIÓN PROYECTOS */
 
-/* Comienzo de la sección Contacto */
+/* Comienzo de la SECCIÓN CONTACTO */
 
 .seccion-contacto {
     background-color: #3F0071;
