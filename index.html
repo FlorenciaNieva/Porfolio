@@ -1,394 +1,317 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- FontAwesome -->
-    <script src="https://kit.fontawesome.com/d0ec7b50c3.js" crossorigin="anonymous"></script>
-    <!-- GoogleFonts -->
-    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@800&display=swap" rel="stylesheet">
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="img/corazon-favicon.svg" type="image/x-icon">
-    <!-- Etiquetas OpenGraph -->
-    <meta property="og:title" content="Portfolio">
-    <meta property="og:description" content="Presentación de los conocimientos que tengo y proyectos en proceso.">
-    <meta property="og:image" content="img/software-engineer.svg">
-    <meta property="og:site_name" content="https://florencianieva.github.io/Portfolio/">
-    <meta property="og:type" content="website">
-</head>
-
-<body>
-    <!-- Links de navegación -->
-
-    <header>
-        <nav class="navegador">
-            <ul class="lista-horizontal">
-                <li>
-                    <a href="#presentacion" class="item-navegador">HOLA</a>
-                </li>
-                <li>
-                    <a href="#conocimientos" class="item-navegador">CONOCIMIENTOS</a>
-                </li>
-                <li>
-                    <a href="#proyectos"  class="item-navegador">PROYECTOS</a>
-                </li>
-                <li>
-                    <a href="#contacto"  class="item-navegador boton">CONTACTO</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-
-        <!-- Sección de presentación -->
-
-        <a name="presentacion"></a>
-        <section class="centrado seccion-presentacion">
-
-            <div class="presentacion">
-                <p class="intro">
-                    ¡Hola! soy
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mi Portfolio</title>
+        <link rel="stylesheet" href="style.css" />
+        <!-- FontAwesome -->
+        <script src="https://kit.fontawesome.com/d0ec7b50c3.js" crossorigin="anonymous"></script>
+        <!-- GoogleFonts -->
+        <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,700&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Karla:wght@800&display=swap" rel="stylesheet"/>
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="img/corazon-favicon.svg" type="image/x-icon"/>
+        <!-- Etiquetas OpenGraph -->
+        <meta property="og:title" content="Portfolio" />
+        <meta property="og:description" content="Presentación de mis proyectos y habilidades."/>
+        <meta property="og:image" content="img/software-engineer.svg"/>
+        <meta property="og:site_name" content="https://florencianieva.github.io/Portfolio/"/>
+        <meta property="og:type" content="website"/>
+    </head>
+    <body>
+        <!-- Links de navegación -->
+        <header>
+            <nav class="navegador">
+                <ul class="lista-horizontal">
+                    <li>
+                        <a href="#presentacion" class="item-navegador">
+                            HOLA
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#conocimientos" class="item-navegador">
+                            CONOCIMIENTOS
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#proyectos" class="item-navegador">
+                            PROYECTOS
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contacto" class="item-navegador boton">
+                            CONTACTO
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <!-- Sección de presentación -->
+            <a name="presentacion"></a>
+            <section class="centrado seccion-presentacion">
+                <div class="presentacion">
+                    <p class="intro">¡Hola! soy</p>
+                    <h1 class="nombre">Florencia Nieva</h1>
+                    <p class="descripcion">Programadora Frontend</p>
+                    <div>
+                        <a href="#proyectos" class="item-navegador boton">
+                            LO QUE HAGO
+                        </a>
+                    </div>
+                </div>
+                <div class="img-presentacion">
+                    <figure>
+                        <img src="img/software-engineer.svg" alt="Chica con computadora"/>
+                    </figure>
+                </div>
+            </section>
+            <!-- Sección de habilidades -->
+            <a name="conocimientos"></a>
+            <section class="centrado seccion-habilidades">
+                <h2 class="subtitulo">Mis conocimientos</h2>
+                <p class="parrafo">
+                    Estoy capacitada en las siguentes tecnologías, herramientas y lenguajes:
                 </p>
-                <h1 class="nombre">
-                    Florencia Nieva
-                </h1>
-                <p class="descripcion">
-                    Programadora Frontend
-                </p>
+                <!-- tarjetas de lenguajes -->
+                <div class="centrado contenedor-tarjetas">
+                    <div class="tarjeta-conocimiento">
+                        <i class="fa-brands fa-html5 icono-conocimiento"></i>
+                        <p>HTML 5</p>
+                    </div>
+                    <div class="tarjeta-conocimiento">
+                        <i class="fa-brands fa-css3-alt icono-conocimiento"></i>
+                        <p>CSS 3</p>
+                    </div>
+                    <div class="tarjeta-conocimiento">
+                        <i class="fa-brands fa-sass icono-conocimiento"></i>
+                        <p>SASS</p>
+                    </div>
+                    <div class="tarjeta-conocimiento">
+                        <i class="fa-brands fa-js icono-conocimiento"></i>
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="tarjeta-conocimiento">
+                        <i class="fa-brands fa-react icono-conocimiento"></i>
+                        <p>React</p>
+                    </div>
+                    <div class="tarjeta-conocimiento">
+                        <i class="fa-brands fa-git-alt icono-conocimiento"></i>
+                        <p>GIT</p>
+                    </div>
+                </div>
+            </section>
+            <!-- Sección cita -->
+            <section class="centrado seccion-cita">
                 <div>
-                    <a href="#proyectos" class="item-navegador boton">
-                        LO QUE HAGO
+                    <i class="fa-solid fa-quote-right"></i>
+                    <p class="frase">
+                        Los únicos sueños que se hacen realidad son los que persigues; si no haces nada, no obtienes nada.
+                    </p>
+                    <h3 class="frase">-Joseph Atser-</h3>
+                </div>
+            </section>
+            <!-- Sección de proyectos -->
+            <a name="proyectos"></a>
+            <section class="centrado seccion-proyectos">
+                <h2 class="subtitulo">Mis proyectos</h2>
+                <p class="parrafo">
+                    Estos son algunos de los proyectos en los que trabajo:
+                </p>
+                <!-- tarjetas de proyectos -->
+                <div class="centrado contenedor-tarjetas">
+                    <a href="https://florencianieva.github.io/Portfolio/" target="_blank">
+                        <div class="tarjeta-proyecto">
+                            <figure>
+                                <img src="img/portfolio.png" alt="Presentación del proyecto portfolio"/>
+                            </figure>
+                            <p>Portfolio</p>
+                        </div>
+                    </a>
+                    <a href="https://florencianieva.github.io/GeneradorDeMemes/" target="_blank">
+                        <div class="tarjeta-proyecto">
+                            <figure class="img-proyecto">
+                                <img src="img/generador-de-memes.png" alt="Presentación del proyecto generador de memes"/>
+                            </figure>
+                            <p>Generador de memes</p>
+                        </div>
+                    </a>
+                    <a href="" target="_blank">
+                        <div class="tarjeta-proyecto">
+                            <figure class="img-proyecto">
+                                <img src="img/match3.png" alt="Presentación del proyecto match 3"/>
+                            </figure>
+                            <p>Match 3</p>
+                        </div>
+                    </a>
+                    <a href="" target="_blank">
+                        <div class="tarjeta-proyecto">
+                            <figure class="img-proyecto">
+                                <img src="img/controlador-de-gastos.png" alt="Presentación del proyecto controlador de gastos"/>
+                            </figure>
+                            <p>Controlador de gastos</p>
+                        </div>
+                    </a>
+                    <a href="" target="_blank">
+                        <div class="tarjeta-proyecto">
+                            <figure class="img-proyecto">
+                                <img src="img/administrador-de-reuniones.png" alt="Presentación del proyecto administrador de reuniones"/>
+                            </figure>
+                            <p>Administrador de reuniones</p>
+                        </div>
+                    </a>
+                    <a href="" target="_blank">
+                        <div class="tarjeta-proyecto">
+                            <figure class="img-proyecto">
+                                <img src="img/todo-app.png" alt="Presentación del proyecto todo app"/>
+                            </figure>
+                            <p>Todo app</p>
+                        </div>
+                    </a>
+                    <a href="" target="_blank">
+                        <div class="tarjeta-proyecto">
+                            <figure class="img-proyecto">
+                                <img src="img/buscador-de-peliculas.png" alt="Presentación del proyecto buscador de peliculas"/>
+                            </figure>
+                            <p>Buscador de peliculas</p>
+                        </div>
                     </a>
                 </div>
-            </div>
-
-            <div class="img-presentacion">
-                <figure>
-                    <img src="img/software-engineer.svg" alt="Chica con computadora">
-                </figure>
-            </div>
-
-        </section>
-
-        <!-- Sección de habilidades -->
-
-        <a name="conocimientos"></a>
-        <section class="centrado seccion-habilidades">
-            <h2 class="subtitulo">
-                Mis conocimientos
-            </h2>
-            <p class="parrafo">
-                Estoy capacitada en las siguentes tecnologías, herramientas y lenguajes: 
-            </p>
-
-            <!-- tarjetas de lenguajes -->
-
-            <div class="centrado contenedor-tarjetas">
-
-                <div class="tarjeta-conocimiento">
-                    <i class="fa-brands fa-html5 icono-conocimiento"></i>
-                    <p>HTML 5</p>
-                </div>
-
-                <div class="tarjeta-conocimiento">
-                    <i class="fa-brands fa-css3-alt icono-conocimiento"></i>
-                    <p>CSS 3</p>
-                </div>
-
-                <div class="tarjeta-conocimiento">
-                    <i class="fa-brands fa-sass icono-conocimiento"></i>
-                    <p>SASS</p>
-                </div>
-
-                <div class="tarjeta-conocimiento">
-                    <i class="fa-brands fa-js icono-conocimiento"></i>
-                    <p>JavaScript</p>
-                </div>
-
-                <div class="tarjeta-conocimiento">
-                    <i class="fa-brands fa-react icono-conocimiento"></i>
-                    <p>React</p>
-                </div>
-
-                <div class="tarjeta-conocimiento">
-                    <i class="fa-brands fa-git-alt icono-conocimiento"></i>
-                    <p>GIT</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Sección cita -->
-
-        <section class="centrado seccion-cita">
-            <div>
-                <i class="fa-solid fa-quote-right"></i>
-                <p class="frase">
-                    Los únicos sueños que se hacen realidad son los que persigues; si no haces nada, no obtienes nada.
-                </p>
-                <h3 class="frase">-Joseph Atser-</h3>
-            </div>
-        </section>
-
-        <!-- Sección de proyectos -->
-
-        <a name="proyectos"></a>
-        <section class="centrado seccion-proyectos">
-            <h2 class="subtitulo">
-                Mis proyectos
-            </h2>
-            <p class="parrafo">
-                Estos son algunos de los proyectos en los que trabajo:
-            </p>
-
-            <!-- tarjetas de proyectos -->
-
-            <div class="centrado contenedor-tarjetas">
-
-                <a href="https://florencianieva.github.io/Portfolio/" target="_blank">
-                    <div class="tarjeta-proyecto">
-                        <figure>
-                            <img src="img/portfolio.png" alt="Presentación del proyecto portfolio">
-                        </figure>
+            </section>
+            <!-- Sección de contacto -->
+            <a name="contacto"></a>
+            <section class="centrado seccion-contacto">
+                <div class="centrado contenedor-contacto">
+                    <div class="contactame">
+                        <h2 class="subtitulo-contacto">Contactame</h2>
                         <p>
-                            Portfolio
+                            Si tienes alguna pregunta no dudes en contactarme. Estoy disponible también a través de correo electrónico y redes sociales.
                         </p>
+                        <!-- Links de contacto -->
+                        <ul class="lista-vertical">
+                            <div>
+                                <li>
+                                    <a href="https://github.com/FlorenciaNieva" target="_blank" class="borde-redes" aria-label="GitHub">
+                                        <i class="fa-brands fa-github-alt icono-redes circulo-icono" aria-hidden="true"></i>
+                                        FlorenciaNieva
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/flor_nievaa/" target="_blank" class="borde-redes" aria-label="Instagram">
+                                        <i class="fa-brands fa-instagram icono-redes circulo-icono" aria-hidden="true"></i>
+                                        @flor_nievaa
+                                    </a>
+                                </li>
+                            </div>
+                            <div>
+                                <li>
+                                    <a href="https://www.linkedin.com/in/florencia-nievaa/" target="_blank" class="borde-redes" aria-label="Linkedin">
+                                        <i class="fa-brands fa-linkedin icono-redes circulo-icono" aria-hidden="true"></i>
+                                        Florenica Nieva
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mailto:flornieva160@gmail.com" target="_blank" class="borde-redes" aria-label="Email">
+                                        <i class="fa-regular fa-envelope icono-redes circulo-icono" aria-hidden="true"></i>
+                                        flornieva160@gmail.com
+                                    </a>
+                                </li>
+                            </div>
+                        </ul>
                     </div>
-                </a>
-
-                <a href="" target="_blank">
-                    <div class="tarjeta-proyecto">
-                        <figure class="img-proyecto">
-                            <img src="img/generador-de-memes.png" alt="Presentación del proyecto generador de memes">
-                        </figure>
-                        <p>
-                            Generador de memes
-                        </p>
-                    </div>
-                </a>
-
-                <a href="" target="_blank">
-                    <div class="tarjeta-proyecto">
-                        <figure class="img-proyecto">
-                            <img src="img/match3.png" alt="Presentación del proyecto match 3">
-                        </figure>
-                        <p>
-                            Match 3
-                        </p>
-                    </div> 
-                </a>
-
-                <a href="" target="_blank">
-                    <div class="tarjeta-proyecto">
-                        <figure class="img-proyecto">
-                            <img src="img/controlador-de-gastos.png" alt="Presentación del proyecto controlador de gastos">
-                        </figure>
-                        <p>
-                            Controlador de gastos
-                        </p>
-                    </div>
-                </a>
-
-                <a href="" target="_blank">
-                    <div class="tarjeta-proyecto">
-                        <figure class="img-proyecto">
-                            <img src="img/administrador-de-reuniones.png" alt="Presentación del proyecto administrador de reuniones">
-                        </figure>
-                        <p>
-                            Administrador de reuniones
-                        </p>
-                    </div>
-                </a>
-
-                <a href="" target="_blank">
-                    <div class="tarjeta-proyecto">
-                        <figure class="img-proyecto">
-                            <img src="img/todo-app.png" alt="Presentación del proyecto todo app">
-                        </figure>
-                        <p>
-                            Todo app
-                        </p>
-                    </div>
-                </a>
-                
-                <a href="" target="_blank">
-                    <div class="tarjeta-proyecto">
-                        <figure class="img-proyecto">
-                            <img src="img/buscador-de-peliculas.png" alt="Presentación del proyecto buscador de peliculas">
-                        </figure>
-                        <p>
-                            Buscador de peliculas
-                        </p>
-                    </div>
-                </a>
-
-            </div> 
-        </section>
-
-        <!-- Sección de contacto -->
-
-        <a name="contacto"></a> 
-        <section class="centrado seccion-contacto">
-            <div class="centrado contenedor-contacto">
-                <div class="contactame">
-                    <h2 class="subtitulo">
-                        Contactame
-                    </h2>
-                    <p>
-                        Si tienes alguna pregunta no dudes en contactarme. Estoy disponible también a través de correo electrónico y redes sociales.
-                    </p>
-
-                    <!-- Links de contacto -->
-
-                    <ul class="lista-vertical">
-
-                        <div>
-                            <li>
-                                <a href="https://github.com/FlorenciaNieva" target="_blank" class="borde-redes" aria-label="GitHub">
-                                    <i class="fa-brands fa-github-alt icono-redes circulo-icono" aria-hidden="true"></i> FlorenicaNieva
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.instagram.com/flor_nievaa/" target="_blank" class="borde-redes" aria-label="Instagram">
-                                    <i class="fa-brands fa-instagram icono-redes circulo-icono"  aria-hidden="true"></i> @flor_nievaa
-                                </a>
-                            </li>
-                        </div>
-
-                        <div>
-                            <li>
-                                <a href="https://www.linkedin.com/in/florencia-nievaa/" target="_blank" class="borde-redes" aria-label="Linkedin">
-                                    <i class="fa-brands fa-linkedin icono-redes circulo-icono"  aria-hidden="true"></i> Florenica Nieva
-                                </a>
-                            </li>
-                            <li>
-                                <a href="mailto:flornieva160@gmail.com" target="_blank" class="borde-redes" aria-label="Email">
-                                    <i class="fa-regular fa-envelope icono-redes circulo-icono"  aria-hidden="true"></i> flornieva160@gmail.com
-                                </a>
-                            </li>
-                        </div>
-
-                    </ul>
-                </div>
-
-                <div class="escribime">
-                    <h2 class="subtitulo">
-                        Escribime
-                    </h2>
-
-                    <!-- Formulario de contacto-->
-
-                    <form id="formulario-contacto" class="formulario-contacto">
-
-                        <div class="inputs-horizontales">
+                    <div class="escribime">
+                        <h2 class="subtitulo-contacto">Escribime</h2>
+                        <!-- Formulario de contacto-->
+                        <form id="formulario-contacto" class="formulario-contacto">
+                            <div class="inputs-horizontales">
+                                <div>
+                                    <label>
+                                        Nombre *
+                                        <input type="text" id="nombre" placeholder="p. ej.: Florencia" required/>
+                                        <i class="fa-regular fa-circle-check validacion-icono" aria-hidden="true"></i>
+                                        <i class="fa-regular fa-circle-xmark invalidacion-icono" aria-hidden="true"></i>
+                                    </label>
+                                </div>
+                                <div>
+                                    <label>
+                                        Apellido *
+                                        <input type="text" id="apellido" placeholder="p. ej.: Nieva" required/>
+                                        <i class="fa-regular fa-circle-check validacion-icono" aria-hidden="true"></i>
+                                        <i class="fa-regular fa-circle-xmark invalidacion-icono" aria-hidden="true"></i>
+                                    </label>
+                                </div>
+                            </div>
                             <div>
                                 <label>
-                                    Nombre *
-                                    <input type="text" id="nombre"  placeholder="p. ej.: Florencia"  required>
+                                    Email *
+                                    <input type="email" id="email" placeholder="p. ej.: flornieva160@gmail.com" required/>
                                     <i class="fa-regular fa-circle-check validacion-icono" aria-hidden="true"></i>
                                     <i class="fa-regular fa-circle-xmark invalidacion-icono" aria-hidden="true"></i>
                                 </label>
                             </div>
-
                             <div>
                                 <label>
-                                    Apellido *
-                                    <input type="text" id="apellido" placeholder="p. ej.: Nieva" required>
+                                    Mensaje *
+                                    <!-- textarea -->
+                                    <textarea id="mensaje" class="mensaje" placeholder="Escriba un mensaje aquí" required></textarea>
                                     <i class="fa-regular fa-circle-check validacion-icono" aria-hidden="true"></i>
                                     <i class="fa-regular fa-circle-xmark invalidacion-icono" aria-hidden="true"></i>
                                 </label>
                             </div>
-                        </div>
-
-                        <div>
-                            <label>
-                                Email *
-                                <input type="email" id="email" placeholder="p. ej.: flornieva160@gmail.com" required>
-                                <i class="fa-regular fa-circle-check validacion-icono" aria-hidden="true"></i>
-                                <i class="fa-regular fa-circle-xmark invalidacion-icono" aria-hidden="true"></i>
-                            </label>
-                        </div>
-
-                        <div>
-                            <label>
-                                Mensaje *
-                                <!-- textarea -->
-                                <textarea id="mensaje" class="mensaje" placeholder="Escriba un mensaje aquí" required></textarea>
-                                <i class="fa-regular fa-circle-check validacion-icono" aria-hidden="true"></i>
-                                <i class="fa-regular fa-circle-xmark invalidacion-icono" aria-hidden="true"></i>
-                            </label>
-                        </div>
-
-                        <!-- bottom enviar-->
-                        <div>
-                            <input type="submit" class="boton boton-enviar" value="Enviar">
-                        </div>
-
-                    </form>
+                            <!-- botón enviar-->
+                            <div>
+                                <label>
+                                    <input type="submit" class="boton boton-enviar" value="Enviar"/>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-            </div>
-        </section>
-
-    </main>
-
-    <footer class="centrado pie-pagina">
-
-        <!-- Links de navegación-->
-
-        <ul class="lista-horizontal">
-            <li>
-                <a href="#presentacion" class="item-footer">
-                    HOLA
-                </a> 
-            </li>
-            <li >
-                <a href="#conocimientos" class="item-footer">
-                    CONOCIMIENTOS
-                </a> 
-            </li>
-            <li>
-                <a href="#proyectos" class="item-footer">
-                    PROYECTOS
-                </a> 
-            </li>
-            <li>
-                <a href="#contacto" class="item-footer">
-                    CONTACTO
-                </a> 
-            </li>
-        </ul>
-
-        <!-- Links de contacto -->
-
-        <ul class="lista-horizontal">
-            <li>
-                <a href="https://github.com/FlorenciaNieva" target="_blank" class="circulo-icono centrado circulo-footer" aria-label="GitHub">
-                    <i class="fa-brands fa-github-alt icono-redes icono-footer"></i>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.instagram.com/flor_nievaa/" target="_blank" class="circulo-icono centrado circulo-footer" aria-label="Instagram">
-                    <i class="fa-brands fa-instagram icono-redes icono-footer"></i>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.linkedin.com/in/florencia-nievaa/" target="_blank" class="circulo-icono centrado circulo-footer" aria-label="Linkedin">
-                    <i class="fa-brands fa-linkedin icono-redes icono-footer"></i>
-                </a>
-            </li>
-            <li>
-                <a href="mailto:flornieva160@gmail.com" target="_blank" class="circulo-icono centrado circulo-footer" aria-label="Email">
-                    <i class="fa-regular fa-envelope icono-redes icono-footer"></i>
-                </a>
-            </li>
-        </ul>
-
-        <p>Hecho con &#128156; por Flor</p>
-    </footer>
-</body>
+            </section>
+        </main>
+        <footer class="centrado pie-pagina">
+            <!-- Links de navegación-->
+            <ul class="lista-horizontal">
+                <li>
+                    <a href="#presentacion" class="item-footer">HOLA</a>
+                </li>
+                <li>
+                    <a href="#conocimientos" class="item-footer">CONOCIMIENTOS</a>
+                </li>
+                <li>
+                    <a href="#proyectos" class="item-footer">PROYECTOS </a>
+                </li>
+                <li>
+                    <a href="#contacto" class="item-footer">CONTACTO </a>
+                </li>
+            </ul>
+            <!-- Links de contacto -->
+            <ul class="lista-horizontal">
+                <li>
+                    <a href="https://github.com/FlorenciaNieva" target="_blank" class="circulo-icono centrado circulo-footer" aria-label="GitHub">
+                        <i class="fa-brands fa-github-alt icono-redes icono-footer"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/flor_nievaa/" target="_blank" class="circulo-icono centrado circulo-footer" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram icono-redes icono-footer"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/florencia-nievaa/" target="_blank" class="circulo-icono centrado circulo-footer" aria-label="Linkedin">
+                        <i class="fa-brands fa-linkedin icono-redes icono-footer"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:flornieva160@gmail.com" target="_blank" class="circulo-icono centrado circulo-footer" aria-label="Email">
+                        <i class="fa-regular fa-envelope icono-redes icono-footer"></i>
+                    </a>
+                </li>
+            </ul>
+            <p>Hecho con &#128156; por Flor</p>
+        </footer>
+    </body>
 </html>
