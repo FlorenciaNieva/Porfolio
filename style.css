@@ -184,7 +184,7 @@ img {
     border: 1px solid rgb(185, 183, 183);
     border-radius: 10px;
     margin: 10px;
-    transition: 0.1s;
+    transition: transform .6s;
 }
 
 .tarjeta-conocimiento p {
@@ -194,11 +194,7 @@ img {
 }
 
 .tarjeta-conocimiento:hover {
-    border: 1px solid #000;
-}
-
-.tarjeta-conocimiento:hover p {
-    color: #aa14f0;
+    transform: translate(0, -5px);
 }
 
 .fa-html5 {
